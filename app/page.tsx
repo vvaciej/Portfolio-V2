@@ -1,7 +1,7 @@
 'use client';
 
 import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faArrowLeft, faArrowRight, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
@@ -11,37 +11,39 @@ export default function Home() {
 	return (
 		<div className='bg-[#1c1c1e] h-full w-full text-black'>
 			<div className='w-full h-full font-[system-ui] flex items-center flex-col font-semibold text-[#eee]'>
-				<header className='h-40 w-full relative flex items-center justify-center'>
-					<div className='w-[70rem] z-10 relative flex justify-between items-center'>
-						<span className='text-[#ffffffc4]'>&copy; 2024 maciejskok</span>
-						<nav className='h-full w-[15rem] py-1 ml-16 bg-[#131315] px-[.3rem] rounded-full flex'>
-							<button className='h-full w-full bg-[#2C2C2E] px-4 py-1 rounded-full'>Strona główna</button>
+				<header className='xl:h-40 h-32 w-full relative flex items-center justify-center'>
+					<div className='xl:w-[70rem] lg:w-[60rem] md:w-[44rem] sm:w-[35rem] z-10 relative flex justify-between items-center'>
+						<span className='text-[#ffffffc4] xl:text-md text-sm'>&copy; 2024 maciejskok</span>
+						<nav className='h-full w-[10rem] xl:w-[15rem] py-1 ml-16 bg-[#131315] px-[.3rem] rounded-full flex'>
+							<button className='h-full w-full bg-[#2C2C2E] px-4 py-1 rounded-full xl:text-md text-sm'>
+								Strona główna
+							</button>
 						</nav>
 						<a
 							href='mailto:maciejskok@proton.me'
-							className='border-4 border-blue-500 py-1 px-4 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white cursor-pointer hover:scale-105 transition-all'>
+							className='border-4 border-blue-500 py-1 px-4 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white cursor-pointer hover:scale-105 transition-all xl:text-md text-sm'>
 							maciejskok@proton.me
 						</a>
 					</div>
 				</header>
-				<div className='w-full h-9 bg-[#63e6be] text-[#080808] flex items-center justify-center'>
+				<div className='w-full h-8 xl:h-9 bg-[#63e6be] text-[#080808] flex items-center justify-center'>
 					<h2>Aktualnie jestem dostępny</h2>
 				</div>
-				<main className='w-[70rem] mt-16 h-full grid grid-cols-4 grid-rows-4 gap-5 mb-32'>
-					<div className='w-full h-full bg-[#2C2C2E] col-span-2 rounded-[2rem] py-3 pt-7 px-4 flex items-center justify-center flex-col'>
-						<h1 className='text-5xl font-extrabold bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent select-none'>
+				<main className='xl:w-[70rem] md:w-[44rem] sm:w-[35rem] lg:w-[60rem] mt-12 lg:mt-16 h-full grid grid-cols-3 lg:grid-cols-4 lg:grid-rows-4 grid-rows-6 gap-5 mb-32'>
+					<div className='w-full h-full bg-[#2C2C2E] col-span-2 rounded-[2rem] xl:py-3 py-2 xl:pt-7 pt-3 px-4 flex items-center justify-center flex-col'>
+						<h1 className='xl:text-5xl lg:text-4xl text-3xl font-extrabold bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent select-none'>
 							Maciek Skokowski
 						</h1>
-						<p className='mt-1 text-[1.32rem] select-none'>Samouk, front-end developer w Warszawie</p>
-						<p className='font-normal text-center mt-2 select-none'>
+						<p className='xl:mt-1 lg:text-xl text-lg xl:text-[1.32rem] select-none'>Samouk, front-end developer w Warszawie</p>
+						<p className='font-normal text-center xl:mt-3 lg:mt-2 mt-1 text-[0.86rem] select-none leading-5 xl:text-[1rem]'>
 							Hej! Jestem Maciek, mam 20 lat i moją pasją jest programowanie stron internetowych których uczę się robić
 							od ponad roku. Chętnie zaprogramuje Tobie stronę wizytówke czy bardziej rozbudowaną w bardzo niskiej
 							cenie, skontaktuj się ze mną mailowo lub telefonicznie :).
 						</p>
-						<section className='mt-4 flex gap-4'>
+						<section className='xl:mt-8 mt-4'>
 							<a
 								href='tel:+48795369308'
-								className='border-4 border-blue-500 py-1 px-4 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white cursor-pointer hover:scale-105 transition-all'>
+								className='border-4 border-blue-500 py-1 px-4 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white xl:text-[1rem] text-sm cursor-pointer hover:scale-105 transition-all'>
 								Zadzwoń: 795 369 308
 							</a>
 						</section>
@@ -56,23 +58,23 @@ export default function Home() {
 									: 'translate-x-0'
 							} transition-transform duration-200 relative h-full w-full flex`}>
 							<img
-								className='object-cover absolute top-[-3rem] scale-[139%]'
+								className='object-cover absolute top-[-2rem] xl:top-[-3rem] scale-[145%] xl:scale-[139%]'
 								src='https://i.ibb.co/2qBks6M/448974962-1521669402065793-421239235051550492-n.jpg'
 								alt='picture-of-my-face'
 							/>
 							<img
-								className='object-cover absolute top-[-2.7rem] scale-[118%] left-[126%]'
+								className='object-cover absolute top-[-2rem] xl:top-[-2.7rem] scale-[118%] left-[124.5%]'
 								src='https://i.ibb.co/g4GwYVT/448794891-995839758513458-3133694217385930912-n-1.jpg'
 								alt='picture-of-my-face'
 							/>
 							<img
-								className='object-cover absolute top-[-2rem] scale-[113%] left-[242%]'
+								className='object-cover absolute top-[-2rem] scale-[116.8%] xl:scale-[113%] left-[243%]'
 								src='https://i.ibb.co/hZdFkpp/448725510-1013649933488125-530744277301084544-n-1.jpg'
 								alt='picture-of-my-dog'
 							/>
 						</section>
 						<button
-							className='w-10 h-10 bg-[#00000074] hover:w-12 hover:h-12 transition-all rounded-full absolute left-6 bottom-6 hover:bottom-5 hover:left-5 flex items-center justify-center'
+							className='xl:w-10 w-8 h-8 xl:h-10 bg-[#00000074] xl:hover:w-12 xl:hover:h-12 transition-all rounded-full absolute left-6 bottom-4 xl:bottom-6 xl:hover:bottom-5 xl:hover:left-5 flex items-center justify-center'
 							onClick={() => {
 								myImagesTransform === 'secondSlide'
 									? setMyImagesTransform('firstSlide')
@@ -82,22 +84,31 @@ export default function Home() {
 							}}>
 							<FontAwesomeIcon className='h-4 text-orange-50 brightness-90' icon={faChevronLeft} />
 						</button>
-						<section className='flex gap-3 absolute bottom-10 left-1/2 translate-x-[-50%]'>
+						<section className='flex gap-3 absolute xl:bottom-10 bottom-7 left-1/2 translate-x-[-50%]'>
 							<div
-								className={`h-[0.6rem] transition-colors duration-300 w-[0.6rem] rounded-full bg-[#00000074] ${
+								className={`h-[0.6rem] transition-colors duration-300 w-[0.6rem] rounded-full bg-[#00000074] cursor-pointer ${
 									myImagesTransform === 'firstSlide' ? 'bg-[#ffffffc5]' : ''
-								}`}></div>
+								}`}
+								onClick={() => {
+									setMyImagesTransform('firstSlide');
+								}}></div>
 							<div
-								className={`h-[0.6rem] w-[0.65rem] duration-300 transition-colors rounded-full bg-[#00000074]  ${
+								className={`h-[0.6rem] w-[0.65rem] duration-300 transition-colors rounded-full bg-[#00000074] cursor-pointer ${
 									myImagesTransform === 'secondSlide' ? 'bg-[#ffffffc5]' : ''
-								}`}></div>
+								}`}
+								onClick={() => {
+									setMyImagesTransform('secondSlide');
+								}}></div>
 							<div
-								className={`h-[0.6rem] w-[0.6rem] duration-300 transition-colors rounded-full bg-[#00000074]  ${
+								className={`h-[0.6rem] w-[0.6rem] duration-300 transition-colors rounded-full bg-[#00000074] cursor-pointer ${
 									myImagesTransform === 'thirdSlide' ? 'bg-[#ffffffc5]' : ''
-								}`}></div>
+								}`}
+								onClick={() => {
+									setMyImagesTransform('thirdSlide');
+								}}></div>
 						</section>
 						<button
-							className='w-10 h-10 bg-[#00000074] hover:w-12 hover:h-12 transition-all rounded-full absolute right-6 bottom-6 hover:bottom-5 hover:right-5 flex items-center justify-center'
+							className='xl:w-10 w-8 h-8 xl:h-10 bg-[#00000074] xl:hover:w-12 xl:hover:h-12 transition-all rounded-full absolute right-6 bottom-4 xl:bottom-6 xl:hover:bottom-5 xl:hover:right-5 flex items-center justify-center'
 							onClick={() => {
 								myImagesTransform === 'firstSlide'
 									? setMyImagesTransform('secondSlide')
@@ -108,9 +119,9 @@ export default function Home() {
 							<FontAwesomeIcon className='h-4 text-orange-50 brightness-90' icon={faChevronRight} />
 						</button>
 					</div>
-					<div className='w-full h-full bg-[#2C2C2E] row-span-2 rounded-[2rem] p-8 flex flex-col justify-center'>
-						<h2 className='text-3xl font-bold'>Nauka</h2>
-						<section className='mt-8'>
+					<div className='w-full h-full bg-[#2C2C2E] row-span-2 rounded-[2rem] p-6 xl:p-8 flex flex-col justify-center'>
+						<h2 className='xl:text-3xl text-2xl font-bold'>Nauka</h2>
+						<section className='lg:mt-6 mt-5 xl:mt-8'>
 							<div className='border-b-[2px] border-zinc-900 pb-3 flex gap-2 flex-col'>
 								<section className='flex gap-2 items-center'>
 									<section>
@@ -125,25 +136,29 @@ export default function Home() {
 											alt='css-logo'
 										/>
 									</section>
-									<p className='leading-[1.1rem]'>Budowanie responsywnych stron z HTML i CSS</p>
+									<p className='leading-[1.1rem] xl:text-md text-sm'>Budowanie responsywnych stron z HTML i CSS</p>
 								</section>
-								<span className='uppercase text-[.8rem] text-gray-400 ml-10'>Ukończone, 2msc</span>
+								<span className='uppercase text-xs text-gray-400 xl:ml-11 ml-10'>Ukończone, 2msc</span>
 							</div>
-							<div className='border-b-[2px] mt-4 border-zinc-900 pb-3 flex gap-1 flex-col'>
+							<div className='border-b-[2px] xl:mt-4 mt-3 border-zinc-900 xl:pb-3 pb-2 flex gap-1 flex-col'>
 								<section className='flex gap-3 items-center'>
 									<section>
 										<img
-											className='h-8'
+											className='h-7 mb-1'
 											src='https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg'
 											alt='js-logo'
 										/>
-										<img className='h-7' src='https://i.ibb.co/Lr0WsP7/typescript-icon.png' alt='' />
+										<img
+											className='h-7 xl:block hidden'
+											src='https://i.ibb.co/Lr0WsP7/typescript-icon.png'
+											alt='ts-logo'
+										/>
 									</section>
-									<p className='leading-[1.1rem]'>Kompletny kurs Javascript</p>
+									<p className='leading-[1.1rem] xl:text-md text-sm'>Kompletny kurs Javascript</p>
 								</section>
-								<span className='uppercase text-[.8rem] text-gray-400 ml-10'>Ukończone, 3msc</span>
+								<span className='uppercase text-xs text-gray-400 xl:ml-10 ml-9'>Ukończone, 3msc</span>
 							</div>
-							<div className='border-b-[2px] mt-4 border-zinc-900 pb-3 flex gap-1 flex-col'>
+							<div className='border-b-[2px] xl:mt-4 mt-3 border-zinc-900 pb-3 flex gap-1 flex-col'>
 								<section className='flex gap-3 items-center'>
 									<section>
 										<img
@@ -151,13 +166,17 @@ export default function Home() {
 											src='https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg'
 											alt='reactjs-logo'
 										/>
-										<img className='min-h-2 max-h-7' src='https://i.ibb.co/28n9LQy/nextjs-icon.png' alt='nextjs-logo' />
+										<img
+											className='min-h-2 max-h-7 xl:block hidden'
+											src='https://i.ibb.co/28n9LQy/nextjs-icon.png'
+											alt='nextjs-logo'
+										/>
 									</section>
-									<p className='leading-[1.1rem]'>Kompletny kurs podstaw: React i Next</p>
+									<p className='leading-[1.1rem] xl:text-md text-sm'>Kompletny kurs podstaw: React i Next</p>
 								</section>
-								<span className='uppercase text-[.8rem] text-gray-400 ml-10'>Ukończone, 2msc</span>
+								<span className='uppercase text-xs text-gray-400 xl:ml-11 ml-9 lg:ml-10'>Ukończone, 2msc</span>
 							</div>
-							<div className='mt-4 pb-3 flex flex-col'>
+							<div className='xl:mt-4 mt-3 xl:pb-3 flex flex-col'>
 								<section className='flex gap-3 items-center'>
 									<section>
 										<img
@@ -171,40 +190,44 @@ export default function Home() {
 											alt='expressjs-logo'
 										/>
 									</section>
-									<p className='leading-[1.1rem]'>Kompletny kurs podstaw Node js, Express (Backend)</p>
+									<p className='leading-[1.1rem] xl:text-md text-sm'>
+										Kompletny kurs podstaw Node js, Express (Backend)
+									</p>
 								</section>
-								<span className='uppercase text-[.8rem] text-gray-400 ml-10 mt-2'>0% Ukończone</span>
+								<span className='uppercase text-xs text-gray-400 xl:ml-11 ml-10 mt-2'>
+									0% Ukończone
+								</span>
 							</div>
 						</section>
 					</div>
-					<div className='w-full h-full bg-[#2C2C2E] p-3 rounded-[2rem]'>
-						<section className='relative bottom-1'>
+					<div className='w-full h-full bg-[#2C2C2E] p-3 px-6 rounded-[2rem] lg:col-span-1 col-span-2'>
+						<section className='relative lg:bottom-1 bottom-5 flex justify-center flex-col items-center'>
 							<img
-								className='relative top-6'
+								className='relative lg:top-5 top-7 xl:top-6 lg:h-max h-36 w-max'
 								src='https://i.ibb.co/VpHR2Dr/fb3274a5-f14e-4488-84fe-13cd5238b192.png'
 								alt='wsb-merito-warszawa-logo'
 							/>
-							<p className='text-[1.2rem] font-semibold text-center leading-6'>
+							<p className='xl:text-[1.2rem] text-lg lg:text-[1.05rem] font-semibold text-center lg:leading-5 leading-6 xl:leading-6'>
 								Student informatyki drugiego semestru na uczelni <b className='font-bold'>WSB Merito w Warszawie</b>
 							</p>
 						</section>
 					</div>
 					<div className='w-full h-full bg-[#2C2C2E] col-span-2 rounded-[2rem] flex items-center p-7 justify-between'>
 						<img
-							className='h-56 rounded-2xl'
+							className='xl:h-56 h-44 rounded-2xl'
 							src='https://i.scdn.co/image/ab67616d0000b2738a31195a371b2233456f6c07'
 							alt='spotify-artist-image'
 						/>
 						<section className='flex flex-col justify-between h-full items-start pr-10'>
-							<img className='h-14' src='https://registe.me/img/spotify-logo.svg' alt='spotify-logo' />
+							<img className='xl:h-14 h-12' src='https://registe.me/img/spotify-logo.svg' alt='spotify-logo' />
 							<section>
 								<section className='flex items-center'>
 									<div className='animate-[playing_0.8s_infinite] w-[3px] h-[10px] rounded-sm bg-[#2ad45e] mr-[3px]'></div>
 									<div className='animate-[playing_1s_infinite] w-[3px] h-[10px] rounded-sm bg-[#2ad45e] mr-[3px]'></div>
 									<div className='animate-[playing_1.2s_infinite] w-[3px] h-[10px] rounded-sm bg-[#2ad45e] mr-[3px]'></div>
-									<h3 className='text-green-500 mb-1 ml-1'>Ostatnio słuchane</h3>
+									<h3 className='text-green-500 xl:mb-1 ml-1'>Ostatnio słuchane</h3>
 								</section>
-								<h1 className='text-2xl font-extrabold leading-6'>Unforgettable</h1>
+								<h1 className='xl:text-2xl text-xl font-extrabold leading-6'>Unforgettable</h1>
 								<span>French Montana</span>
 							</section>
 						</section>
@@ -215,26 +238,31 @@ export default function Home() {
 							className='h-full w-full rounded-3xl'
 							loading='lazy'></iframe>
 					</div>
-					<div className='w-full h-full bg-[#2C2C2E] flex flex-col justify-between row-span-2 rounded-[2rem] p-6 px-8'>
+					<div className='w-full h-full bg-[#2C2C2E] flex flex-col justify-between row-span-2 rounded-[2rem] p-6 xl:px-8'>
 						<section>
-							<span className='uppercase text-[.8rem] tracking-wide text-gray-400'>Projekt</span>
-							<h3 className='text-[1.6rem] font-bold leading-6 mb-4'>Psychoterapeuta</h3>
-							<span className='uppercase text-[.8rem] text-gray-400 tracking-wide'>technologie</span>
+							<span className='uppercase text-xs xl:text-[.8rem] tracking-wide text-gray-400'>Projekt</span>
+							<h3 className='xl:text-[1.6rem] text-xl font-bold leading-6 mb-2 xl:mb-4'>Psychoterapeuta</h3>
+							<span className='uppercase text-xs xl:text-[.8rem] text-gray-400 tracking-wide'>technologie</span>
 							<section className='flex items-center gap-1 mt-1'>
 								<img
-									className='h-5'
+									className='xl:h-5 h-4'
 									title='tailwindcss'
 									src='https://i.ibb.co/VV1b8Xy/tailwindcss-icon.png'
 									alt='tailwindcss-icon'
 								/>
-								<img className='h-7' title='react' src='https://i.ibb.co/YcjmT0w/react.png' alt='react-icon' />
+								<img className='xl:h-6 h-5' title='react' src='https://i.ibb.co/YcjmT0w/react.png' alt='react-icon' />
 								<img
-									className='h-7'
+									className='xl:h-5 h-5'
 									title='typescript'
 									src='https://i.ibb.co/Lr0WsP7/typescript-icon.png'
 									alt='typescript-icon'
 								/>
-								<img className='h-8' title='nextjs' src='https://i.ibb.co/28n9LQy/nextjs-icon.png' alt='nextjs-icon' />
+								<img
+									className='xl:h-7 h-6'
+									title='nextjs'
+									src='https://i.ibb.co/28n9LQy/nextjs-icon.png'
+									alt='nextjs-icon'
+								/>
 							</section>
 						</section>
 						<div className='bg-white h-full w-full bg-[url("https://i.ibb.co/1rRXY4p/i-Phone-13-PRO-www-martamoszko-pl.png")] brightness-[95%] bg-center bg-cover mt-3 mb-3 rounded-2xl'></div>
@@ -242,31 +270,36 @@ export default function Home() {
 							<a
 								href='https://martamoszko.pl'
 								target='_blank'
-								className='px-5 bg-[#1C1C1E] w-max rounded-full py-2 hover:scale-105 transition-transform'>
+								className='px-5 bg-[#1C1C1E] w-max rounded-full py-2 hover:scale-105 transition-transform text-sm xl:text-md'>
 								Zobacz projekt
 							</a>
 						</div>
 					</div>
 					<div className='w-full h-full bg-[#2C2C2E] flex flex-col justify-between row-span-2 rounded-[2rem] p-6 px-8'>
 						<section>
-							<span className='uppercase text-[.8rem] tracking-wide text-gray-400'>Projekt</span>
-							<h3 className='text-[1.6rem] font-bold leading-6 mb-4'>Darmowe filmy</h3>
+							<span className='uppercase text-xs xl:text-[.8rem] tracking-wide text-gray-400'>Projekt</span>
+							<h3 className='xl:text-[1.6rem] text-xl font-bold leading-6 mb-4'>Darmowe filmy</h3>
 							<span className='uppercase text-[.8rem] text-gray-400 tracking-wide'>technologie</span>
 							<section className='flex items-center gap-1 mt-1'>
 								<img
-									className='h-5'
+									className='xl:h-5 h-4'
 									title='tailwindcss'
 									src='https://i.ibb.co/VV1b8Xy/tailwindcss-icon.png'
 									alt='tailwindcss-icon'
 								/>
-								<img className='h-7' title='react' src='https://i.ibb.co/YcjmT0w/react.png' alt='react-icon' />
+								<img className='xl:h-7 h-5' title='react' src='https://i.ibb.co/YcjmT0w/react.png' alt='react-icon' />
 								<img
-									className='h-7'
+									className='xl:h-7 h-5'
 									title='typescript'
 									src='https://i.ibb.co/Lr0WsP7/typescript-icon.png'
 									alt='typescript-icon'
 								/>
-								<img className='h-8' title='nextjs' src='https://i.ibb.co/28n9LQy/nextjs-icon.png' alt='nextjs-icon' />
+								<img
+									className='xl:h-8 h-6'
+									title='nextjs'
+									src='https://i.ibb.co/28n9LQy/nextjs-icon.png'
+									alt='nextjs-icon'
+								/>
 							</section>
 						</section>
 						<div className='bg-white h-full w-full bg-[url("https://i.ibb.co/J54gyws/i-Phone-13-PRO-www-vvaciej-codes.png")] brightness-[95%] bg-center bg-cover mt-3 mb-3 rounded-2xl'></div>
@@ -274,7 +307,7 @@ export default function Home() {
 							<a
 								href='https://vvaciej.codes'
 								target='_blank'
-								className='px-5 bg-[#1C1C1E] w-max rounded-full py-2 hover:scale-105 transition-transform'>
+								className='px-5 bg-[#1C1C1E] text-sm xl:text-md w-max rounded-full py-2 hover:scale-105 transition-transform'>
 								Zobacz projekt
 							</a>
 						</div>
@@ -295,7 +328,7 @@ export default function Home() {
 					<a
 						href='https://github.com/vvaciej'
 						target='_blank'
-						className='w-full h-full relative p-4 bg-[#171515] rounded-[2rem] flex justify-center items-center'>
+						className='w-full h-full relative p-4 bg-[#171515] rounded-[2rem] flex justify-center items-center lg:col-span-1 col-span-2'>
 						<FontAwesomeIcon className='h-20' icon={faGithub} />
 						<div className='w-10 h-10 bg-[#00000074] hover:w-12 hover:h-12 transition-all rounded-full absolute right-6 bottom-6 flex items-center justify-center hover:bottom-5 hover:right-5'>
 							<FontAwesomeIcon className='h-5 text-orange-50 brightness-90' icon={faArrowRight} />
