@@ -33,7 +33,7 @@ export default function Home() {
 					</nav>
 				</header>
 				<div className='w-full sm:h-8 h-7 xl:h-9 bg-[#63e6be] text-[#080808] flex items-center justify-center'>
-					<h2>Aktualnie jestem dostępny</h2>
+					<h2 className='sm:text-[1rem] text-sm'>Aktualnie jestem dostępny</h2>
 				</div>
 				<main className='xl:w-[70rem] md:w-[44rem] xs:w-[22rem] xxs:w-[18rem] w-[91%] sm:w-[30rem] lg:w-[60rem] mt-10 lg:mt-16 h-full grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 sm:grid-rows-8 grid-rows-[repeat(16,minmax(0,1fr))] md:grid-rows-6 gap-5 md:mb-32 mb-20'>
 					<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem] xl:py-3 sm:py-2 xl:pt-7 sm:pt-3 sm:px-4 xs:px-8 xs:py-8 py-5 px-5 flex items-center justify-center flex-col'>
@@ -320,7 +320,7 @@ export default function Home() {
 							</a>
 						</div>
 					</div>
-					<div className='w-full h-full bg-[#2C2C2E] flex flex-col justify-between row-span-2 rounded-[2rem] xs:p-6 xs:px-8 py-4 px-5 sm:col-span-1 col-span-2'>
+					<div className='w-full h-full bg-[#2C2C2E] flex flex-col justify-between row-span-2 rounded-[2rem] xs:py-4 sm:p-6 xs:px-6 py-4 px-5 sm:col-span-1 col-span-2'>
 						<section>
 							<span className='uppercase text-xs xl:text-[.8rem] tracking-wide text-gray-400'>Projekt</span>
 							<h3 className='xl:text-[1.6rem] sm:text-xl text-2xl font-bold leading-6 mb-3'>Darmowe filmy</h3>
