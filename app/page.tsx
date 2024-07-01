@@ -139,7 +139,7 @@ export default function Home() {
 					<div className='w-full h-full sm:col-span-1 col-span-2 bg-[#2C2C2E] row-span-2 rounded-[2rem] xs:p-6 p-4 xl:p-8 flex flex-col justify-center'>
 						<h2 className='xl:text-3xl text-2xl font-bold sm:text-left text-center'>Nauka</h2>
 						<section className='lg:mt-6 mt-5 xl:mt-8'>
-							<section className='grid sm:grid-cols-1 sm:gap-0 gap-3 grid-cols-2 sm:flex-col flex-row'>
+							<section className='grid sm:grid-cols-1 sm:gap-0 gap-4 grid-cols-2 sm:flex-col flex-row'>
 								<div className='sm:border-b-[2px] border-zinc-900 pb-3 flex xs:gap-2 gap-1 flex-col'>
 									<section className='flex xs:gap-2 sm:flex-row flex-col items-center'>
 										<section className='sm:block flex'>
@@ -154,7 +154,7 @@ export default function Home() {
 												alt='css-logo'
 											/>
 										</section>
-										<p className='leading-[1.1rem] xl:text-md sm:text-sm text-md sm:text-left text-center'>
+										<p className='leading-[1.05rem] xl:text-md sm:text-sm text-[.92rem] sm:text-left text-center'>
 											Budowanie responsywnych stron z HTML i CSS
 										</p>
 									</section>
@@ -176,7 +176,7 @@ export default function Home() {
 												alt='ts-logo'
 											/>
 										</section>
-										<p className='leading-[1.1rem] xl:text-md sm:text-sm text-md sm:text-left text-center'>
+										<p className='leading-[1.05rem] xl:text-md sm:text-sm text-[.92rem] sm:text-left text-center'>
 											Kompletny kurs Javascript
 										</p>
 									</section>
@@ -185,7 +185,7 @@ export default function Home() {
 									</span>
 								</div>
 							</section>
-							<section className='grid sm:grid-cols-1 sm:gap-0 gap-3 grid-cols-2 sm:flex-col flex-row'>
+							<section className='grid sm:grid-cols-1 sm:gap-0 gap-4 grid-cols-2 sm:flex-col flex-row'>
 								<div className='sm:border-b-[2px] xl:mt-4 mt-3 border-zinc-900 pb-3 flex gap-1 flex-col'>
 									<section className='flex xs:gap-3 gap-1 sm:flex-row flex-col items-center'>
 										<section>
@@ -200,7 +200,7 @@ export default function Home() {
 												alt='nextjs-logo'
 											/>
 										</section>
-										<p className='leading-[1.1rem] xl:text-md sm:text-sm text-md sm:text-left text-center sm:mb-0 mb-1'>
+										<p className='leading-[1.05rem] xl:text-md sm:text-sm text-[.92rem] sm:text-left text-center sm:mb-0 mb-1'>
 											Kompletny kurs podstaw: React i Next
 										</p>
 									</section>
@@ -222,7 +222,7 @@ export default function Home() {
 												alt='expressjs-logo'
 											/>
 										</section>
-										<p className='leading-[1.1rem] xl:text-md sm:text-sm text-md sm:text-left text-center'>
+										<p className='leading-[1.05rem] xl:text-md sm:text-sm text-[.92rem] sm:text-left text-center'>
 											Kompletny kurs podstaw Node js, Express (Backend)
 										</p>
 									</section>
