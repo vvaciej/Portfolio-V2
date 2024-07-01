@@ -11,11 +11,11 @@ export default function Home() {
 	return (
 		<div className='bg-[#1c1c1e] h-full w-full text-black'>
 			<div className='w-full h-full font-[system-ui] flex items-center flex-col font-semibold text-[#eee]'>
-				<header className='xl:h-40 h-32 w-full relative flex items-center justify-center'>
-					<div className='xl:w-[70rem] lg:w-[60rem] md:w-[44rem] sm:w-[35rem] z-10 relative flex justify-between items-center'>
+				<header className='xl:h-40 sm:w-full w-[22rem] md:h-32 h-full md:py-0 py-6 relative flex items-center justify-center md:flex-row flex-col'>
+					<div className='xl:w-[70rem] lg:w-[60rem] md:w-[44rem] sm:w-[30rem] w-[22rem] z-10 relative flex justify-between items-center'>
 						<span className='text-[#ffffffc4] xl:text-md text-sm'>&copy; 2024 maciejskok</span>
-						<nav className='h-full w-[10rem] xl:w-[15rem] py-1 ml-16 bg-[#131315] px-[.3rem] rounded-full flex'>
-							<button className='h-full w-full bg-[#2C2C2E] px-4 py-1 rounded-full xl:text-md text-sm'>
+						<nav className='md:flex hidden h-full w-max md:w-max xl:w-[15rem] py-1 ml-16 bg-[#131315] px-[.3rem] rounded-full'>
+							<button className='h-full w-max bg-[#2C2C2E] px-4 py-1 rounded-full xl:text-md text-sm'>
 								Strona główna
 							</button>
 						</nav>
@@ -25,30 +25,37 @@ export default function Home() {
 							maciejskok@proton.me
 						</a>
 					</div>
+					<nav className='h-full md:hidden w-max md:w-[10rem] xl:w-[15rem] py-1 bg-[#131315] px-[.3rem] rounded-full flex mt-4'>
+						<button className='h-full w-full bg-[#2C2C2E] px-4 py-1 rounded-full xl:text-md text-sm'>
+							Strona główna
+						</button>
+					</nav>
 				</header>
 				<div className='w-full h-8 xl:h-9 bg-[#63e6be] text-[#080808] flex items-center justify-center'>
 					<h2>Aktualnie jestem dostępny</h2>
 				</div>
-				<main className='xl:w-[70rem] md:w-[44rem] sm:w-[35rem] lg:w-[60rem] mt-12 lg:mt-16 h-full grid grid-cols-3 lg:grid-cols-4 lg:grid-rows-4 grid-rows-6 gap-5 mb-32'>
-					<div className='w-full h-full bg-[#2C2C2E] col-span-2 rounded-[2rem] xl:py-3 py-2 xl:pt-7 pt-3 px-4 flex items-center justify-center flex-col'>
-						<h1 className='xl:text-5xl lg:text-4xl text-3xl font-extrabold bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent select-none'>
+				<main className='xl:w-[70rem] md:w-[44rem] w-[22rem] sm:w-[30rem] lg:w-[60rem] mt-10 lg:mt-16 h-full grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 sm:grid-rows-8 grid-rows-12 md:grid-rows-6 gap-5 mb-32'>
+					<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem] xl:py-3 sm:py-2 xl:pt-7 sm:pt-3 sm:px-4 px-8 py-8 flex items-center justify-center flex-col'>
+						<h1 className='xl:text-5xl lg:text-4xl text-[1.9rem] sm:text-3xl font-extrabold bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent select-none sm:mr-0 mr-3'>
 							Maciek Skokowski
 						</h1>
-						<p className='xl:mt-1 lg:text-xl text-lg xl:text-[1.32rem] select-none'>Samouk, front-end developer w Warszawie</p>
-						<p className='font-normal text-center xl:mt-3 lg:mt-2 mt-1 text-[0.86rem] select-none leading-5 xl:text-[1rem]'>
+						<p className='xl:mt-1 lg:text-xl text-lg sm:text-lg xl:text-[1.32rem] select-none leading-5 sm:mb-0 mb-2'>
+							Samouk, front-end developer w Warszawie
+						</p>
+						<p className='font-normal sm:text-center xl:mt-3 lg:mt-2 mt-1 text-[0.86rem] select-none leading-5 xl:text-[1rem]'>
 							Hej! Jestem Maciek, mam 20 lat i moją pasją jest programowanie stron internetowych których uczę się robić
 							od ponad roku. Chętnie zaprogramuje Tobie stronę wizytówke czy bardziej rozbudowaną w bardzo niskiej
 							cenie, skontaktuj się ze mną mailowo lub telefonicznie :).
 						</p>
-						<section className='xl:mt-8 mt-4'>
+						<section className='xl:mt-8 sm:mt-4 mt-6'>
 							<a
 								href='tel:+48795369308'
-								className='border-4 border-blue-500 py-1 px-4 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white xl:text-[1rem] text-sm cursor-pointer hover:scale-105 transition-all'>
+								className='border-4 border-blue-500 py-1 px-4 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white xl:text-[1rem] sm:text-sm text-md cursor-pointer hover:scale-105 transition-all'>
 								Zadzwoń: 795 369 308
 							</a>
 						</section>
 					</div>
-					<div className='w-full h-full p-4 bg-[#2C2C2E] rounded-[2rem] relative overflow-hidden'>
+					<div className='w-full h-full p-4 bg-[#2C2C2E] rounded-[2rem] sm:row-span-1 row-span-2 sm:col-span-1 col-span-2 relative overflow-hidden'>
 						<section
 							className={`${
 								myImagesTransform === 'secondSlide'
@@ -58,17 +65,17 @@ export default function Home() {
 									: 'translate-x-0'
 							} transition-transform duration-200 relative h-full w-full flex`}>
 							<img
-								className='object-cover absolute top-[-2rem] xl:top-[-3rem] scale-[145%] xl:scale-[139%]'
+								className='object-cover absolute top-[-3.5rem] sm:top-[-2rem] xl:top-[-3rem] scale-[134%] sm:scale-[145%] xl:scale-[139%]'
 								src='https://i.ibb.co/2qBks6M/448974962-1521669402065793-421239235051550492-n.jpg'
 								alt='picture-of-my-face'
 							/>
 							<img
-								className='object-cover absolute top-[-2rem] xl:top-[-2.7rem] scale-[118%] left-[124.5%]'
+								className='object-cover absolute top-[-3rem] sm:top-[-2rem] xl:top-[-2.7rem] scale-[118%] left-[124.5%]'
 								src='https://i.ibb.co/g4GwYVT/448794891-995839758513458-3133694217385930912-n-1.jpg'
 								alt='picture-of-my-face'
 							/>
 							<img
-								className='object-cover absolute top-[-2rem] scale-[116.8%] xl:scale-[113%] left-[243%]'
+								className='object-cover absolute top-[-4rem] sm:top-[-2rem] scale-[116.8%] xl:scale-[113%] left-[243%]'
 								src='https://i.ibb.co/hZdFkpp/448725510-1013649933488125-530744277301084544-n-1.jpg'
 								alt='picture-of-my-dog'
 							/>
@@ -84,7 +91,7 @@ export default function Home() {
 							}}>
 							<FontAwesomeIcon className='h-4 text-orange-50 brightness-90' icon={faChevronLeft} />
 						</button>
-						<section className='flex gap-3 absolute xl:bottom-10 bottom-7 left-1/2 translate-x-[-50%]'>
+						<section className='flex gap-3 absolute xl:bottom-10 bottom-5 left-1/2 translate-x-[-50%]'>
 							<div
 								className={`h-[0.6rem] transition-colors duration-300 w-[0.6rem] rounded-full bg-[#00000074] cursor-pointer ${
 									myImagesTransform === 'firstSlide' ? 'bg-[#ffffffc5]' : ''
@@ -119,107 +126,126 @@ export default function Home() {
 							<FontAwesomeIcon className='h-4 text-orange-50 brightness-90' icon={faChevronRight} />
 						</button>
 					</div>
-					<div className='w-full h-full bg-[#2C2C2E] row-span-2 rounded-[2rem] p-6 xl:p-8 flex flex-col justify-center'>
-						<h2 className='xl:text-3xl text-2xl font-bold'>Nauka</h2>
+					<div className='w-full h-full sm:col-span-1 col-span-2 bg-[#2C2C2E] row-span-2 rounded-[2rem] p-6 xl:p-8 flex flex-col justify-center'>
+						<h2 className='xl:text-3xl text-2xl font-bold sm:text-left text-center'>Nauka</h2>
 						<section className='lg:mt-6 mt-5 xl:mt-8'>
-							<div className='border-b-[2px] border-zinc-900 pb-3 flex gap-2 flex-col'>
-								<section className='flex gap-2 items-center'>
-									<section>
-										<img
-											className='min-h-5 mb-1'
-											src='https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg'
-											alt='html-logo'
-										/>
-										<img
-											className='min-h-5'
-											src='https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg'
-											alt='css-logo'
-										/>
+							<section className='grid sm:grid-cols-1 sm:gap-0 gap-3 grid-cols-2 sm:flex-col flex-row'>
+								<div className='sm:border-b-[2px] border-zinc-900 pb-3 flex gap-2 flex-col'>
+									<section className='flex gap-2 sm:flex-row flex-col items-center'>
+										<section className='sm:block flex'>
+											<img
+												className='sm:w-16 h-6 mb-1'
+												src='https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg'
+												alt='html-logo'
+											/>
+											<img
+												className='sm:w-16 h-6'
+												src='https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg'
+												alt='css-logo'
+											/>
+										</section>
+										<p className='leading-[1.1rem] xl:text-md sm:text-sm text-md sm:text-left text-center'>
+											Budowanie responsywnych stron z HTML i CSS
+										</p>
 									</section>
-									<p className='leading-[1.1rem] xl:text-md text-sm'>Budowanie responsywnych stron z HTML i CSS</p>
-								</section>
-								<span className='uppercase text-xs text-gray-400 xl:ml-11 ml-10'>Ukończone, 2msc</span>
-							</div>
-							<div className='border-b-[2px] xl:mt-4 mt-3 border-zinc-900 xl:pb-3 pb-2 flex gap-1 flex-col'>
-								<section className='flex gap-3 items-center'>
-									<section>
-										<img
-											className='h-7 mb-1'
-											src='https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg'
-											alt='js-logo'
-										/>
-										<img
-											className='h-7 xl:block hidden'
-											src='https://i.ibb.co/Lr0WsP7/typescript-icon.png'
-											alt='ts-logo'
-										/>
+									<span className='uppercase text-xs text-gray-400 xl:ml-11 sm:ml-10 sm:text-left text-center'>
+										Ukończone, 2msc
+									</span>
+								</div>
+								<div className='sm:border-b-[2px] xl:mt-4 sm:mt-3 border-zinc-900 xl:pb-3 pb-2 flex gap-1 flex-col'>
+									<section className='flex gap-3 sm:flex-row flex-col sm:mb-0 mb-1 items-center'>
+										<section>
+											<img
+												className='sm:h-7 h-6 sm:mb-1'
+												src='https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg'
+												alt='js-logo'
+											/>
+											<img
+												className='h-7 xl:block hidden'
+												src='https://i.ibb.co/Lr0WsP7/typescript-icon.png'
+												alt='ts-logo'
+											/>
+										</section>
+										<p className='leading-[1.1rem] xl:text-md sm:text-sm text-md sm:text-left text-center'>
+											Kompletny kurs Javascript
+										</p>
 									</section>
-									<p className='leading-[1.1rem] xl:text-md text-sm'>Kompletny kurs Javascript</p>
-								</section>
-								<span className='uppercase text-xs text-gray-400 xl:ml-10 ml-9'>Ukończone, 3msc</span>
-							</div>
-							<div className='border-b-[2px] xl:mt-4 mt-3 border-zinc-900 pb-3 flex gap-1 flex-col'>
-								<section className='flex gap-3 items-center'>
-									<section>
-										<img
-											className='h-11'
-											src='https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg'
-											alt='reactjs-logo'
-										/>
-										<img
-											className='min-h-2 max-h-7 xl:block hidden'
-											src='https://i.ibb.co/28n9LQy/nextjs-icon.png'
-											alt='nextjs-logo'
-										/>
+									<span className='uppercase text-xs text-gray-400 xl:ml-10 sm:ml-9 sm:text-left text-center'>
+										Ukończone, 3msc
+									</span>
+								</div>
+							</section>
+							<section className='grid sm:grid-cols-1 sm:gap-0 gap-3 grid-cols-2 sm:flex-col flex-row'>
+								<div className='sm:border-b-[2px] xl:mt-4 mt-3 border-zinc-900 pb-3 flex gap-1 flex-col'>
+									<section className='flex gap-3 sm:flex-row flex-col items-center'>
+										<section>
+											<img
+												className='sm:h-11 h-6'
+												src='https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg'
+												alt='reactjs-logo'
+											/>
+											<img
+												className='min-h-2 max-h-7 xl:block hidden'
+												src='https://i.ibb.co/28n9LQy/nextjs-icon.png'
+												alt='nextjs-logo'
+											/>
+										</section>
+										<p className='leading-[1.1rem] xl:text-md sm:text-sm text-md sm:text-left text-center sm:mb-0 mb-1'>
+											Kompletny kurs podstaw: React i Next
+										</p>
 									</section>
-									<p className='leading-[1.1rem] xl:text-md text-sm'>Kompletny kurs podstaw: React i Next</p>
-								</section>
-								<span className='uppercase text-xs text-gray-400 xl:ml-11 ml-9 lg:ml-10'>Ukończone, 2msc</span>
-							</div>
-							<div className='xl:mt-4 mt-3 xl:pb-3 flex flex-col'>
-								<section className='flex gap-3 items-center'>
-									<section>
-										<img
-											className='h-15'
-											src='https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg'
-											alt='nodejs-logo'
-										/>
-										<img
-											className='h-10'
-											src='https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg'
-											alt='expressjs-logo'
-										/>
+									<span className='uppercase text-xs sm:text-left text-center text-gray-400 xl:ml-11 sm:ml-9 lg:ml-10'>
+										Ukończone, 2msc
+									</span>
+								</div>
+								<div className='xl:mt-4 mt-3 xl:pb-3 flex flex-col'>
+									<section className='flex sm:flex-row flex-col gap-3 items-center'>
+										<section className='sm:block flex gap-2'>
+											<img
+												className='sm:h-15 h-6'
+												src='https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg'
+												alt='nodejs-logo'
+											/>
+											<img
+												className='sm:h-10 h-6'
+												src='https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg'
+												alt='expressjs-logo'
+											/>
+										</section>
+										<p className='leading-[1.1rem] xl:text-md sm:text-sm text-md sm:text-left text-center'>
+											Kompletny kurs podstaw Node js, Express (Backend)
+										</p>
 									</section>
-									<p className='leading-[1.1rem] xl:text-md text-sm'>
-										Kompletny kurs podstaw Node js, Express (Backend)
-									</p>
-								</section>
-								<span className='uppercase text-xs text-gray-400 xl:ml-11 ml-10 mt-2'>
-									0% Ukończone
-								</span>
-							</div>
+									<span className='uppercase text-xs text-gray-400 xl:ml-11 sm:ml-10 sm:text-left text-center mt-2'>
+										0% Ukończone
+									</span>
+								</div>
+							</section>
 						</section>
 					</div>
-					<div className='w-full h-full bg-[#2C2C2E] p-3 px-6 rounded-[2rem] lg:col-span-1 col-span-2'>
-						<section className='relative lg:bottom-1 bottom-5 flex justify-center flex-col items-center'>
+					<div className='w-full h-full bg-[#2C2C2E] p-3 px-6 rounded-[2rem] lg:col-span-1 md:col-span-2 col-span-2 sm:col-span-1'>
+						<section className='relative lg:bottom-1 sm:bottom-4 md:bottom-5 flex justify-center flex-col items-center'>
 							<img
-								className='relative lg:top-5 top-7 xl:top-6 lg:h-max h-36 w-max'
+								className='lg:top-5 sm:top-8 xl:top-6 lg:h-max h-28 md:h-36 sm:h-24 top-[-12%] sm:relative absolute w-max'
 								src='https://i.ibb.co/VpHR2Dr/fb3274a5-f14e-4488-84fe-13cd5238b192.png'
 								alt='wsb-merito-warszawa-logo'
 							/>
-							<p className='xl:text-[1.2rem] text-lg lg:text-[1.05rem] font-semibold text-center lg:leading-5 leading-6 xl:leading-6'>
+							<p className='xl:text-[1.2rem] md:text-lg lg:text-[1.05rem] font-semibold text-center lg:leading-5 md:leading-6 leading-5 xl:leading-6 sm:mt-3 md:mt-0 relative sm:top-0 top-20'>
 								Student informatyki drugiego semestru na uczelni <b className='font-bold'>WSB Merito w Warszawie</b>
 							</p>
 						</section>
 					</div>
-					<div className='w-full h-full bg-[#2C2C2E] col-span-2 rounded-[2rem] flex items-center p-7 justify-between'>
-						<img
-							className='xl:h-56 h-44 rounded-2xl'
-							src='https://i.scdn.co/image/ab67616d0000b2738a31195a371b2233456f6c07'
-							alt='spotify-artist-image'
-						/>
-						<section className='flex flex-col justify-between h-full items-start pr-10'>
-							<img className='xl:h-14 h-12' src='https://registe.me/img/spotify-logo.svg' alt='spotify-logo' />
+					<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem] flex sm:items-center p-7 justify-between sm:flex-row flex-col'>
+						<section className='flex justify-between w-full'>
+							<img
+								className='xl:h-56 sm:h-44 h-40 rounded-2xl'
+								src='https://i.scdn.co/image/ab67616d0000b2738a31195a371b2233456f6c07'
+								alt='spotify-artist-image'
+							/>
+							<img className='xl:h-14 sm:h-12 h-16' src='https://registe.me/img/spotify-logo.svg' alt='spotify-logo' />
+						</section>
+						<section className='flex flex-col justify-between sm:h-full items-start sm:pr-10'>
+							<img className='xl:h-14 sm:h-12 h-16 sm:block hidden' src='https://registe.me/img/spotify-logo.svg' alt='spotify-logo' />
 							<section>
 								<section className='flex items-center'>
 									<div className='animate-[playing_0.8s_infinite] w-[3px] h-[10px] rounded-sm bg-[#2ad45e] mr-[3px]'></div>
@@ -227,18 +253,18 @@ export default function Home() {
 									<div className='animate-[playing_1.2s_infinite] w-[3px] h-[10px] rounded-sm bg-[#2ad45e] mr-[3px]'></div>
 									<h3 className='text-green-500 xl:mb-1 ml-1'>Ostatnio słuchane</h3>
 								</section>
-								<h1 className='xl:text-2xl text-xl font-extrabold leading-6'>Unforgettable</h1>
+								<h1 className='xl:text-2xl sm:text-xl text-2xl font-extrabold sm:leading-6 leading-7'>Unforgettable</h1>
 								<span>French Montana</span>
 							</section>
 						</section>
 					</div>
-					<div className='w-full h-full bg-[#2C2C2E] col-span-2 rounded-[2rem]'>
+					<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem]'>
 						<iframe
 							src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2439.1600748814762!2d20.96178647700158!3d52.31309775152704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ec99f9c2b9fc3%3A0x467c5fe4ea06d29f!2sMy%C5%9Bliborska%2C%20Warszawa!5e0!3m2!1spl!2spl!4v1719792322074!5m2!1spl!2spl'
 							className='h-full w-full rounded-3xl'
 							loading='lazy'></iframe>
 					</div>
-					<div className='w-full h-full bg-[#2C2C2E] flex flex-col justify-between row-span-2 rounded-[2rem] p-6 xl:px-8'>
+					<div className='w-full h-full bg-[#2C2C2E] flex-col justify-between rounded-[2rem] p-6 xl:px-8 row-span-2 sm:flex hidden'>
 						<section>
 							<span className='uppercase text-xs xl:text-[.8rem] tracking-wide text-gray-400'>Projekt</span>
 							<h3 className='xl:text-[1.6rem] text-xl font-bold leading-6 mb-2 xl:mb-4'>Psychoterapeuta</h3>
@@ -275,7 +301,7 @@ export default function Home() {
 							</a>
 						</div>
 					</div>
-					<div className='w-full h-full bg-[#2C2C2E] flex flex-col justify-between row-span-2 rounded-[2rem] p-6 px-8'>
+					<div className='w-full h-full bg-[#2C2C2E] sm:flex hidden flex-col justify-between row-span-2 rounded-[2rem] p-6 px-8'>
 						<section>
 							<span className='uppercase text-xs xl:text-[.8rem] tracking-wide text-gray-400'>Projekt</span>
 							<h3 className='xl:text-[1.6rem] text-xl font-bold leading-6 mb-4'>Darmowe filmy</h3>
@@ -328,7 +354,7 @@ export default function Home() {
 					<a
 						href='https://github.com/vvaciej'
 						target='_blank'
-						className='w-full h-full relative p-4 bg-[#171515] rounded-[2rem] flex justify-center items-center lg:col-span-1 col-span-2'>
+						className='w-full h-full relative p-4 bg-[#171515] rounded-[2rem] flex justify-center items-center lg:col-span-1 md:col-span-2'>
 						<FontAwesomeIcon className='h-20' icon={faGithub} />
 						<div className='w-10 h-10 bg-[#00000074] hover:w-12 hover:h-12 transition-all rounded-full absolute right-6 bottom-6 flex items-center justify-center hover:bottom-5 hover:right-5'>
 							<FontAwesomeIcon className='h-5 text-orange-50 brightness-90' icon={faArrowRight} />
