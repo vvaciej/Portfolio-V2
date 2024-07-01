@@ -4,6 +4,7 @@ import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faArrowRight, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
 	const [myImagesTransform, setMyImagesTransform] = useState('firstSlide');
@@ -11,7 +12,7 @@ export default function Home() {
 	return (
 		<div className='bg-[#1c1c1e] h-full w-full text-black'>
 			<div className='w-full h-full font-[system-ui] flex items-center flex-col font-semibold text-[#eee]'>
-				<header className='xl:h-40 sm:w-full w-[22rem] md:h-32 h-full md:py-0 py-6 relative flex items-center justify-center md:flex-row flex-col'>
+				<header className='xl:h-40 sm:w-full w-[22rem] md:h-32 h-full md:py-0 py-8 relative flex items-center justify-center md:flex-row flex-col'>
 					<div className='xl:w-[70rem] lg:w-[60rem] md:w-[44rem] sm:w-[30rem] w-[22rem] z-10 relative flex justify-between items-center'>
 						<span className='text-[#ffffffc4] xl:text-md text-sm'>&copy; 2024 maciejskok</span>
 						<nav className='md:flex hidden h-full w-max md:w-max xl:w-[15rem] py-1 ml-16 bg-[#131315] px-[.3rem] rounded-full'>
@@ -34,7 +35,7 @@ export default function Home() {
 				<div className='w-full h-8 xl:h-9 bg-[#63e6be] text-[#080808] flex items-center justify-center'>
 					<h2>Aktualnie jestem dostępny</h2>
 				</div>
-				<main className='xl:w-[70rem] md:w-[44rem] w-[22rem] sm:w-[30rem] lg:w-[60rem] mt-10 lg:mt-16 h-full grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 sm:grid-rows-8 grid-rows-12 md:grid-rows-6 gap-5 mb-32'>
+				<main className='xl:w-[70rem] md:w-[44rem] w-[22rem] sm:w-[30rem] lg:w-[60rem] mt-10 lg:mt-16 h-full grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 sm:grid-rows-8 grid-rows-12 md:grid-rows-6 gap-5 md:mb-32 mb-20'>
 					<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem] xl:py-3 sm:py-2 xl:pt-7 sm:pt-3 sm:px-4 px-8 py-8 flex items-center justify-center flex-col'>
 						<h1 className='xl:text-5xl lg:text-4xl text-[1.9rem] sm:text-3xl font-extrabold bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent select-none sm:mr-0 mr-3'>
 							Maciek Skokowski
@@ -63,18 +64,18 @@ export default function Home() {
 									: myImagesTransform === 'thirdSlide'
 									? 'translate-x-[-242%]'
 									: 'translate-x-0'
-							} transition-transform duration-200 relative h-full w-full flex`}>
-							<img
+							} transition-transform duration-500 relative h-full w-full flex`}>
+							<Image priority height={1024} width={576}
 								className='object-cover absolute top-[-3.5rem] sm:top-[-2rem] xl:top-[-3rem] scale-[134%] sm:scale-[145%] xl:scale-[139%]'
 								src='https://i.ibb.co/2qBks6M/448974962-1521669402065793-421239235051550492-n.jpg'
 								alt='picture-of-my-face'
 							/>
-							<img
+							<Image height={1024} width={576}
 								className='object-cover absolute top-[-3rem] sm:top-[-2rem] xl:top-[-2.7rem] scale-[118%] left-[124.5%]'
 								src='https://i.ibb.co/g4GwYVT/448794891-995839758513458-3133694217385930912-n-1.jpg'
 								alt='picture-of-my-face'
 							/>
-							<img
+							<Image height={1024} width={576}
 								className='object-cover absolute top-[-4rem] sm:top-[-2rem] scale-[116.8%] xl:scale-[113%] left-[243%]'
 								src='https://i.ibb.co/hZdFkpp/448725510-1013649933488125-530744277301084544-n-1.jpg'
 								alt='picture-of-my-dog'
@@ -226,7 +227,7 @@ export default function Home() {
 					<div className='w-full h-full bg-[#2C2C2E] p-3 px-6 rounded-[2rem] lg:col-span-1 md:col-span-2 col-span-2 sm:col-span-1'>
 						<section className='relative lg:bottom-1 sm:bottom-4 md:bottom-5 flex justify-center flex-col items-center'>
 							<img
-								className='lg:top-5 sm:top-8 xl:top-6 lg:h-max h-28 md:h-36 sm:h-24 top-[-12%] sm:relative absolute w-max'
+								className='lg:top-5 sm:top-8 xl:top-6 lg:h-max h-32 md:h-36 sm:h-24 top-[-40%] sm:relative absolute w-max'
 								src='https://i.ibb.co/VpHR2Dr/fb3274a5-f14e-4488-84fe-13cd5238b192.png'
 								alt='wsb-merito-warszawa-logo'
 							/>
