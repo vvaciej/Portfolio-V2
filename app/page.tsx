@@ -36,8 +36,8 @@ export default function Home() {
 					<h2 className='sm:text-[1rem] text-sm'>Aktualnie jestem dostępny</h2>
 				</div>
 				<main className='xl:w-[70rem] md:w-[44rem] xs:w-[22rem] xxs:w-[18rem] w-[91%] sm:w-[30rem] lg:w-[60rem] mt-10 lg:mt-16 h-full grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 sm:grid-rows-8 grid-rows-[repeat(16,minmax(0,1fr))] md:grid-rows-6 gap-5 md:mb-32 mb-20'>
-					<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem] xl:py-3 sm:py-2 xl:pt-7 sm:pt-3 sm:px-4 xs:px-8 xs:py-8 py-5 px-5 flex items-center justify-center flex-col'>
-						<h1 className='xl:text-5xl lg:text-4xl xs:text-[1.9rem] text-[1.64rem] sm:text-3xl leading-7 font-extrabold bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent select-none sm:mr-0 mr-3'>
+					<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem] xl:py-3 sm:py-2 xl:pt-7 sm:pt-3 sm:px-4 xs:px-8 xs:py-8 py-5 px-5 flex sm:items-center justify-center flex-col'>
+						<h1 className='xl:text-5xl lg:text-4xl xs:text-[1.9rem] text-[1.64rem] sm:text-3xl leading-7 font-extrabold bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent select-none sm:mr-0 md:mr-3'>
 							Maciek Skokowski
 						</h1>
 						<p className='xl:mt-1 lg:text-xl text-lg sm:text-lg xl:text-[1.32rem] select-none leading-5 sm:mb-0 mb-1 sm:mt-0 mt-1'>
