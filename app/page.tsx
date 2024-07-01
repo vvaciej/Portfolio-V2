@@ -12,9 +12,9 @@ export default function Home() {
 	return (
 		<div className='bg-[#1c1c1e] h-full w-full text-black'>
 			<div className='w-full h-full font-[system-ui] flex items-center flex-col font-semibold text-[#eee]'>
-				<header className='xl:h-40 sm:w-full md:h-32 h-full md:py-0 py-8 relative flex items-center justify-center md:flex-row flex-col w-[18rem]'>
-					<div className='xl:w-[70rem] lg:w-[60rem] md:w-[44rem] sm:w-[30rem] xs:w-[22rem] w-[20rem] z-10 relative flex justify-between items-center'>
-						<span className='text-[#ffffffc4] xl:text-md text-sm'>&copy; 2024 maciejskok</span>
+				<header className='xl:h-40 sm:w-full md:h-32 h-full md:py-0 py-8 relative flex items-center justify-center md:flex-row flex-col xs:w-[18rem]'>
+					<div className='xl:w-[70rem] lg:w-[60rem] md:w-[44rem] sm:w-[30rem] xs:w-[22rem] xxs:w-[18rem] w-[94%] z-10 relative flex justify-between items-center'>
+						<span className='text-[#ffffffc4] xl:text-md text-sm leading-4'>&copy; 2024 maciejskok</span>
 						<nav className='md:flex hidden h-full w-max md:w-max py-1 ml-16 bg-[#131315] px-[.3rem] rounded-full'>
 							<button className='h-full w-max bg-[#2C2C2E] px-4 py-1 rounded-full xl:text-md text-sm'>
 								Strona główna
@@ -35,12 +35,12 @@ export default function Home() {
 				<div className='w-full sm:h-8 h-7 xl:h-9 bg-[#63e6be] text-[#080808] flex items-center justify-center'>
 					<h2>Aktualnie jestem dostępny</h2>
 				</div>
-				<main className='xl:w-[70rem] md:w-[44rem] xs:w-[22rem] w-[20rem] sm:w-[30rem] lg:w-[60rem] mt-10 lg:mt-16 h-full grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 sm:grid-rows-8 grid-rows-[repeat(16,minmax(0,1fr))] md:grid-rows-6 gap-5 md:mb-32 mb-20'>
+				<main className='xl:w-[70rem] md:w-[44rem] xs:w-[22rem] xxs:w-[18rem] w-[94%] sm:w-[30rem] lg:w-[60rem] mt-10 lg:mt-16 h-full grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 sm:grid-rows-8 grid-rows-[repeat(16,minmax(0,1fr))] md:grid-rows-6 gap-5 md:mb-32 mb-20'>
 					<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem] xl:py-3 sm:py-2 xl:pt-7 sm:pt-3 sm:px-4 xs:px-8 xs:py-8 py-5 px-5 flex items-center justify-center flex-col'>
-						<h1 className='xl:text-5xl lg:text-4xl xs:text-[1.9rem] text-[1.85rem] sm:text-3xl font-extrabold bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent select-none sm:mr-0 mr-3'>
+						<h1 className='xl:text-5xl lg:text-4xl xs:text-[1.9rem] text-[1.63rem] sm:text-3xl leading-7 font-extrabold bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent select-none sm:mr-0 mr-3'>
 							Maciek Skokowski
 						</h1>
-						<p className='xl:mt-1 lg:text-xl text-lg sm:text-lg xl:text-[1.32rem] select-none leading-5 sm:mb-0 mb-2'>
+						<p className='xl:mt-1 lg:text-xl text-lg sm:text-lg xl:text-[1.32rem] select-none leading-5 sm:mb-0 mb-1 sm:mt-0 mt-1'>
 							Samouk, front-end developer w Warszawie
 						</p>
 						<p className='font-normal sm:text-center xl:mt-3 lg:mt-2 mt-1 text-[0.86rem] select-none leading-5 xl:text-[1rem]'>
@@ -85,7 +85,7 @@ export default function Home() {
 								height={1024}
 								width={576}
 								priority
-								className='object-cover absolute top-[-4rem] sm:top-[-2rem] scale-[116.8%] xl:scale-[113%] left-[243%]'
+								className='object-cover absolute top-[-4rem] sm:top-[-2rem] scale-[121%] xl:scale-[113%] left-[243%]'
 								src='https://i.ibb.co/hZdFkpp/448725510-1013649933488125-530744277301084544-n-1.jpg'
 								alt='picture-of-my-dog'
 							/>
@@ -240,7 +240,7 @@ export default function Home() {
 								src='https://i.ibb.co/VpHR2Dr/fb3274a5-f14e-4488-84fe-13cd5238b192.png'
 								alt='wsb-merito-warszawa-logo'
 							/>
-							<p className='xl:text-[1.2rem] md:text-lg lg:text-[1.05rem] font-semibold text-center lg:leading-5 md:leading-6 xs:leading-5 leading-[1.2rem] xl:leading-6 sm:mt-3 md:mt-0 relative sm:top-0 xs:top-20 top-[4rem]'>
+							<p className='xl:text-[1.2rem] md:text-lg lg:text-[1.05rem] font-semibold text-center lg:leading-5 md:leading-6 xs:leading-5 leading-[1.2rem] xl:leading-6 sm:mt-3 md:mt-0 relative sm:top-0 xs:top-20 top-[4.3rem]'>
 								Student informatyki drugiego semestru na uczelni <b className='font-bold'>WSB Merito w Warszawie</b>
 							</p>
 						</section>
