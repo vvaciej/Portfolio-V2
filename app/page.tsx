@@ -15,7 +15,7 @@ export default function Home() {
 				<header className='xl:h-40 sm:w-full w-[22rem] md:h-32 h-full md:py-0 py-8 relative flex items-center justify-center md:flex-row flex-col'>
 					<div className='xl:w-[70rem] lg:w-[60rem] md:w-[44rem] sm:w-[30rem] w-[22rem] z-10 relative flex justify-between items-center'>
 						<span className='text-[#ffffffc4] xl:text-md text-sm'>&copy; 2024 maciejskok</span>
-						<nav className='md:flex hidden h-full w-max md:w-max xl:w-[15rem] py-1 ml-16 bg-[#131315] px-[.3rem] rounded-full'>
+						<nav className='md:flex hidden h-full w-max md:w-max py-1 ml-16 bg-[#131315] px-[.3rem] rounded-full'>
 							<button className='h-full w-max bg-[#2C2C2E] px-4 py-1 rounded-full xl:text-md text-sm'>
 								Strona główna
 							</button>
@@ -35,7 +35,7 @@ export default function Home() {
 				<div className='w-full h-8 xl:h-9 bg-[#63e6be] text-[#080808] flex items-center justify-center'>
 					<h2>Aktualnie jestem dostępny</h2>
 				</div>
-				<main className='xl:w-[70rem] md:w-[44rem] w-[22rem] sm:w-[30rem] lg:w-[60rem] mt-10 lg:mt-16 h-full grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 sm:grid-rows-8 grid-rows-12 md:grid-rows-6 gap-5 md:mb-32 mb-20'>
+				<main className='xl:w-[70rem] md:w-[44rem] w-[22rem] sm:w-[30rem] lg:w-[60rem] mt-10 lg:mt-16 h-full grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 sm:grid-rows-8 grid-rows-[repeat(16,minmax(0,1fr))] md:grid-rows-6 gap-5 md:mb-32 mb-20'>
 					<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem] xl:py-3 sm:py-2 xl:pt-7 sm:pt-3 sm:px-4 px-8 py-8 flex items-center justify-center flex-col'>
 						<h1 className='xl:text-5xl lg:text-4xl text-[1.9rem] sm:text-3xl font-extrabold bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent select-none sm:mr-0 mr-3'>
 							Maciek Skokowski
@@ -65,17 +65,26 @@ export default function Home() {
 									? 'translate-x-[-242%]'
 									: 'translate-x-0'
 							} transition-transform duration-500 relative h-full w-full flex`}>
-							<Image priority height={1024} width={576}
+							<Image
+								priority
+								height={1024}
+								width={576}
 								className='object-cover absolute top-[-3.5rem] sm:top-[-2rem] xl:top-[-3rem] scale-[134%] sm:scale-[145%] xl:scale-[139%]'
 								src='https://i.ibb.co/2qBks6M/448974962-1521669402065793-421239235051550492-n.jpg'
 								alt='picture-of-my-face'
 							/>
-							<Image height={1024} width={576}
+							<Image
+								height={1024}
+								width={576}
+								priority
 								className='object-cover absolute top-[-3rem] sm:top-[-2rem] xl:top-[-2.7rem] scale-[118%] left-[124.5%]'
 								src='https://i.ibb.co/g4GwYVT/448794891-995839758513458-3133694217385930912-n-1.jpg'
 								alt='picture-of-my-face'
 							/>
-							<Image height={1024} width={576}
+							<Image
+								height={1024}
+								width={576}
+								priority
 								className='object-cover absolute top-[-4rem] sm:top-[-2rem] scale-[116.8%] xl:scale-[113%] left-[243%]'
 								src='https://i.ibb.co/hZdFkpp/448725510-1013649933488125-530744277301084544-n-1.jpg'
 								alt='picture-of-my-dog'
@@ -246,7 +255,11 @@ export default function Home() {
 							<img className='xl:h-14 sm:h-12 h-16' src='https://registe.me/img/spotify-logo.svg' alt='spotify-logo' />
 						</section>
 						<section className='flex flex-col justify-between sm:h-full items-start sm:pr-10'>
-							<img className='xl:h-14 sm:h-12 h-16 sm:block hidden' src='https://registe.me/img/spotify-logo.svg' alt='spotify-logo' />
+							<img
+								className='xl:h-14 sm:h-12 h-16 sm:block hidden'
+								src='https://registe.me/img/spotify-logo.svg'
+								alt='spotify-logo'
+							/>
 							<section>
 								<section className='flex items-center'>
 									<div className='animate-[playing_0.8s_infinite] w-[3px] h-[10px] rounded-sm bg-[#2ad45e] mr-[3px]'></div>
@@ -265,34 +278,39 @@ export default function Home() {
 							className='h-full w-full rounded-3xl'
 							loading='lazy'></iframe>
 					</div>
-					<div className='w-full h-full bg-[#2C2C2E] flex-col justify-between rounded-[2rem] p-6 xl:px-8 row-span-2 sm:flex hidden'>
+					<div className='w-full h-full bg-[#2C2C2E] flex-col justify-between rounded-[2rem] sm:p-6 px-6 py-4 xl:px-8 row-span-2 sm:col-span-1 col-span-2 flex'>
 						<section>
 							<span className='uppercase text-xs xl:text-[.8rem] tracking-wide text-gray-400'>Projekt</span>
-							<h3 className='xl:text-[1.6rem] text-xl font-bold leading-6 mb-2 xl:mb-4'>Psychoterapeuta</h3>
+							<h3 className='xl:text-[1.6rem] sm:text-xl text-2xl font-bold leading-6 mb-2 xl:mb-4'>Psychoterapeuta</h3>
 							<span className='uppercase text-xs xl:text-[.8rem] text-gray-400 tracking-wide'>technologie</span>
 							<section className='flex items-center gap-1 mt-1'>
 								<img
-									className='xl:h-5 h-4'
+									className='xl:h-5 sm:h-4 h-5'
 									title='tailwindcss'
 									src='https://i.ibb.co/VV1b8Xy/tailwindcss-icon.png'
 									alt='tailwindcss-icon'
 								/>
-								<img className='xl:h-6 h-5' title='react' src='https://i.ibb.co/YcjmT0w/react.png' alt='react-icon' />
 								<img
-									className='xl:h-5 h-5'
+									className='xl:h-6 sm:h-5 h-6'
+									title='react'
+									src='https://i.ibb.co/YcjmT0w/react.png'
+									alt='react-icon'
+								/>
+								<img
+									className='xl:h-5 sm:h-5 h-6'
 									title='typescript'
 									src='https://i.ibb.co/Lr0WsP7/typescript-icon.png'
 									alt='typescript-icon'
 								/>
 								<img
-									className='xl:h-7 h-6'
+									className='xl:h-7 sm:h-6 h-7'
 									title='nextjs'
 									src='https://i.ibb.co/28n9LQy/nextjs-icon.png'
 									alt='nextjs-icon'
 								/>
 							</section>
 						</section>
-						<div className='bg-white h-full w-full bg-[url("https://i.ibb.co/1rRXY4p/i-Phone-13-PRO-www-martamoszko-pl.png")] brightness-[95%] bg-center bg-cover mt-3 mb-3 rounded-2xl'></div>
+						<div className='bg-white h-full w-full sm:bg-[url("https://i.ibb.co/1rRXY4p/i-Phone-13-PRO-www-martamoszko-pl.png")] bg-[url("https://i.ibb.co/zr6YbDt/Zrzut-ekranu-2024-07-02-002432.png")] brightness-[95%] bg-center bg-cover mt-3 mb-3 rounded-2xl'></div>
 						<div className='w-full flex justify-center'>
 							<a
 								href='https://martamoszko.pl'
@@ -302,10 +320,10 @@ export default function Home() {
 							</a>
 						</div>
 					</div>
-					<div className='w-full h-full bg-[#2C2C2E] sm:flex hidden flex-col justify-between row-span-2 rounded-[2rem] p-6 px-8'>
+					<div className='w-full h-full bg-[#2C2C2E] flex flex-col justify-between row-span-2 rounded-[2rem] p-6 px-8 sm:col-span-1 col-span-2'>
 						<section>
 							<span className='uppercase text-xs xl:text-[.8rem] tracking-wide text-gray-400'>Projekt</span>
-							<h3 className='xl:text-[1.6rem] text-xl font-bold leading-6 mb-4'>Darmowe filmy</h3>
+							<h3 className='xl:text-[1.6rem] sm:text-xl text-2xl font-bold leading-6 mb-3'>Darmowe filmy</h3>
 							<span className='uppercase text-[.8rem] text-gray-400 tracking-wide'>technologie</span>
 							<section className='flex items-center gap-1 mt-1'>
 								<img
@@ -329,7 +347,7 @@ export default function Home() {
 								/>
 							</section>
 						</section>
-						<div className='bg-white h-full w-full bg-[url("https://i.ibb.co/J54gyws/i-Phone-13-PRO-www-vvaciej-codes.png")] brightness-[95%] bg-center bg-cover mt-3 mb-3 rounded-2xl'></div>
+						<div className='bg-white h-full w-full bg-[url("https://i.ibb.co/M2Tp4dw/Zrzut-ekranu-2024-07-02-002849.png")] sm:bg-[url("https://i.ibb.co/J54gyws/i-Phone-13-PRO-www-vvaciej-codes.png")] brightness-[95%] bg-center bg-cover mt-3 mb-3 rounded-2xl'></div>
 						<div className='w-full flex justify-center'>
 							<a
 								href='https://vvaciej.codes'

@@ -13,6 +13,9 @@ export default function RootLayout({
 	return (
 		<>
 			<html lang='pl_PL'>
+				<head>
+					<meta name='theme-color' content='#63E6BE' />
+				</head>
 				<body className={inter.className}>{children}</body>
 			</html>
 			<Analytics />
