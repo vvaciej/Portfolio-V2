@@ -12,8 +12,8 @@ export default function Home() {
 	return (
 		<div className='bg-[#1c1c1e] h-full w-full text-black'>
 			<div className='w-full h-full font-[system-ui] flex items-center flex-col font-semibold text-[#eee]'>
-				<header className='xl:h-40 sm:w-full w-[22rem] md:h-32 h-full md:py-0 py-8 relative flex items-center justify-center md:flex-row flex-col'>
-					<div className='xl:w-[70rem] lg:w-[60rem] md:w-[44rem] sm:w-[30rem] w-[22rem] z-10 relative flex justify-between items-center'>
+				<header className='xl:h-40 sm:w-full md:h-32 h-full md:py-0 py-8 relative flex items-center justify-center md:flex-row flex-col w-[18rem]'>
+					<div className='xl:w-[70rem] lg:w-[60rem] md:w-[44rem] sm:w-[30rem] xs:w-[22rem] w-[20rem] z-10 relative flex justify-between items-center'>
 						<span className='text-[#ffffffc4] xl:text-md text-sm'>&copy; 2024 maciejskok</span>
 						<nav className='md:flex hidden h-full w-max md:w-max py-1 ml-16 bg-[#131315] px-[.3rem] rounded-full'>
 							<button className='h-full w-max bg-[#2C2C2E] px-4 py-1 rounded-full xl:text-md text-sm'>
@@ -22,7 +22,7 @@ export default function Home() {
 						</nav>
 						<a
 							href='mailto:maciejskok@proton.me'
-							className='border-4 border-blue-500 py-1 px-4 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white cursor-pointer hover:scale-105 transition-all xl:text-md text-sm'>
+							className='border-4 border-blue-500 py-1 xs:px-4 px-2 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white cursor-pointer hover:scale-105 transition-all xl:text-md xs:text-sm text-[.85rem]'>
 							maciejskok@proton.me
 						</a>
 					</div>
@@ -32,12 +32,12 @@ export default function Home() {
 						</button>
 					</nav>
 				</header>
-				<div className='w-full h-8 xl:h-9 bg-[#63e6be] text-[#080808] flex items-center justify-center'>
+				<div className='w-full sm:h-8 h-7 xl:h-9 bg-[#63e6be] text-[#080808] flex items-center justify-center'>
 					<h2>Aktualnie jestem dostępny</h2>
 				</div>
-				<main className='xl:w-[70rem] md:w-[44rem] w-[22rem] sm:w-[30rem] lg:w-[60rem] mt-10 lg:mt-16 h-full grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 sm:grid-rows-8 grid-rows-[repeat(16,minmax(0,1fr))] md:grid-rows-6 gap-5 md:mb-32 mb-20'>
-					<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem] xl:py-3 sm:py-2 xl:pt-7 sm:pt-3 sm:px-4 px-8 py-8 flex items-center justify-center flex-col'>
-						<h1 className='xl:text-5xl lg:text-4xl text-[1.9rem] sm:text-3xl font-extrabold bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent select-none sm:mr-0 mr-3'>
+				<main className='xl:w-[70rem] md:w-[44rem] xs:w-[22rem] w-[20rem] sm:w-[30rem] lg:w-[60rem] mt-10 lg:mt-16 h-full grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 sm:grid-rows-8 grid-rows-[repeat(16,minmax(0,1fr))] md:grid-rows-6 gap-5 md:mb-32 mb-20'>
+					<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem] xl:py-3 sm:py-2 xl:pt-7 sm:pt-3 sm:px-4 xs:px-8 xs:py-8 py-5 px-5 flex items-center justify-center flex-col'>
+						<h1 className='xl:text-5xl lg:text-4xl xs:text-[1.9rem] text-[1.85rem] sm:text-3xl font-extrabold bg-gradient-to-r from-blue-300 to-blue-500 bg-clip-text text-transparent select-none sm:mr-0 mr-3'>
 							Maciek Skokowski
 						</h1>
 						<p className='xl:mt-1 lg:text-xl text-lg sm:text-lg xl:text-[1.32rem] select-none leading-5 sm:mb-0 mb-2'>
@@ -51,7 +51,7 @@ export default function Home() {
 						<section className='xl:mt-8 sm:mt-4 mt-6'>
 							<a
 								href='tel:+48795369308'
-								className='border-4 border-blue-500 py-1 px-4 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white xl:text-[1rem] sm:text-sm text-md cursor-pointer hover:scale-105 transition-all'>
+								className='border-4 border-blue-500 py-1 px-4 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white xl:text-[1rem] sm:text-sm xs:text-md text-[.88rem] cursor-pointer hover:scale-105 transition-all'>
 								Zadzwoń: 795 369 308
 							</a>
 						</section>
@@ -69,7 +69,7 @@ export default function Home() {
 								priority
 								height={1024}
 								width={576}
-								className='object-cover absolute top-[-3.5rem] sm:top-[-2rem] xl:top-[-3rem] scale-[134%] sm:scale-[145%] xl:scale-[139%]'
+								className='object-cover absolute top-[-2rem] xs:top-[-3.5rem] sm:top-[-2rem] xl:top-[-3rem] scale-[140%] xs:scale-[134%] sm:scale-[145%] xl:scale-[139%]'
 								src='https://i.ibb.co/2qBks6M/448974962-1521669402065793-421239235051550492-n.jpg'
 								alt='picture-of-my-face'
 							/>
@@ -136,12 +136,12 @@ export default function Home() {
 							<FontAwesomeIcon className='h-4 text-orange-50 brightness-90' icon={faChevronRight} />
 						</button>
 					</div>
-					<div className='w-full h-full sm:col-span-1 col-span-2 bg-[#2C2C2E] row-span-2 rounded-[2rem] p-6 xl:p-8 flex flex-col justify-center'>
+					<div className='w-full h-full sm:col-span-1 col-span-2 bg-[#2C2C2E] row-span-2 rounded-[2rem] xs:p-6 p-4 xl:p-8 flex flex-col justify-center'>
 						<h2 className='xl:text-3xl text-2xl font-bold sm:text-left text-center'>Nauka</h2>
 						<section className='lg:mt-6 mt-5 xl:mt-8'>
 							<section className='grid sm:grid-cols-1 sm:gap-0 gap-3 grid-cols-2 sm:flex-col flex-row'>
-								<div className='sm:border-b-[2px] border-zinc-900 pb-3 flex gap-2 flex-col'>
-									<section className='flex gap-2 sm:flex-row flex-col items-center'>
+								<div className='sm:border-b-[2px] border-zinc-900 pb-3 flex xs:gap-2 gap-1 flex-col'>
+									<section className='flex xs:gap-2 sm:flex-row flex-col items-center'>
 										<section className='sm:block flex'>
 											<img
 												className='sm:w-16 h-6 mb-1'
@@ -163,7 +163,7 @@ export default function Home() {
 									</span>
 								</div>
 								<div className='sm:border-b-[2px] xl:mt-4 sm:mt-3 border-zinc-900 xl:pb-3 pb-2 flex gap-1 flex-col'>
-									<section className='flex gap-3 sm:flex-row flex-col sm:mb-0 mb-1 items-center'>
+									<section className='flex xs:gap-3 gap-1 sm:flex-row flex-col sm:mb-0 mb-1 items-center'>
 										<section>
 											<img
 												className='sm:h-7 h-6 sm:mb-1'
@@ -187,7 +187,7 @@ export default function Home() {
 							</section>
 							<section className='grid sm:grid-cols-1 sm:gap-0 gap-3 grid-cols-2 sm:flex-col flex-row'>
 								<div className='sm:border-b-[2px] xl:mt-4 mt-3 border-zinc-900 pb-3 flex gap-1 flex-col'>
-									<section className='flex gap-3 sm:flex-row flex-col items-center'>
+									<section className='flex xs:gap-3 gap-1 sm:flex-row flex-col items-center'>
 										<section>
 											<img
 												className='sm:h-11 h-6'
@@ -209,7 +209,7 @@ export default function Home() {
 									</span>
 								</div>
 								<div className='xl:mt-4 mt-3 xl:pb-3 flex flex-col'>
-									<section className='flex sm:flex-row flex-col gap-3 items-center'>
+									<section className='flex sm:flex-row flex-col xs:gap-3 gap-1 items-center'>
 										<section className='sm:block flex gap-2'>
 											<img
 												className='sm:h-15 h-6'
@@ -236,16 +236,16 @@ export default function Home() {
 					<div className='w-full h-full bg-[#2C2C2E] p-3 px-6 rounded-[2rem] lg:col-span-1 md:col-span-2 col-span-2 sm:col-span-1'>
 						<section className='relative lg:bottom-1 sm:bottom-4 md:bottom-5 flex justify-center flex-col items-center'>
 							<img
-								className='lg:top-5 sm:top-8 xl:top-6 lg:h-max h-32 md:h-36 sm:h-24 top-[-40%] sm:relative absolute w-max'
+								className='lg:top-5 sm:top-8 xl:top-6 lg:h-max xs:h-32 h-28 md:h-36 sm:h-24 top-[-30%] xs:top-[-40%] sm:relative absolute'
 								src='https://i.ibb.co/VpHR2Dr/fb3274a5-f14e-4488-84fe-13cd5238b192.png'
 								alt='wsb-merito-warszawa-logo'
 							/>
-							<p className='xl:text-[1.2rem] md:text-lg lg:text-[1.05rem] font-semibold text-center lg:leading-5 md:leading-6 leading-5 xl:leading-6 sm:mt-3 md:mt-0 relative sm:top-0 top-20'>
+							<p className='xl:text-[1.2rem] md:text-lg lg:text-[1.05rem] font-semibold text-center lg:leading-5 md:leading-6 xs:leading-5 leading-[1.2rem] xl:leading-6 sm:mt-3 md:mt-0 relative sm:top-0 xs:top-20 top-[4rem]'>
 								Student informatyki drugiego semestru na uczelni <b className='font-bold'>WSB Merito w Warszawie</b>
 							</p>
 						</section>
 					</div>
-					<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem] flex sm:items-center p-7 justify-between sm:flex-row flex-col'>
+					<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem] flex sm:items-center xs:p-7 p-5 justify-between sm:flex-row flex-col'>
 						<section className='flex justify-between w-full'>
 							<img
 								className='xl:h-56 sm:h-44 h-40 rounded-2xl'
@@ -278,7 +278,7 @@ export default function Home() {
 							className='h-full w-full rounded-3xl'
 							loading='lazy'></iframe>
 					</div>
-					<div className='w-full h-full bg-[#2C2C2E] flex-col justify-between rounded-[2rem] sm:p-6 px-6 py-4 xl:px-8 row-span-2 sm:col-span-1 col-span-2 flex'>
+					<div className='w-full h-full bg-[#2C2C2E] flex-col justify-between rounded-[2rem] sm:p-6 xs:px-6 xs:py-4 px-5 py-3 xl:px-8 row-span-2 sm:col-span-1 col-span-2 flex'>
 						<section>
 							<span className='uppercase text-xs xl:text-[.8rem] tracking-wide text-gray-400'>Projekt</span>
 							<h3 className='xl:text-[1.6rem] sm:text-xl text-2xl font-bold leading-6 mb-2 xl:mb-4'>Psychoterapeuta</h3>
@@ -320,7 +320,7 @@ export default function Home() {
 							</a>
 						</div>
 					</div>
-					<div className='w-full h-full bg-[#2C2C2E] flex flex-col justify-between row-span-2 rounded-[2rem] p-6 px-8 sm:col-span-1 col-span-2'>
+					<div className='w-full h-full bg-[#2C2C2E] flex flex-col justify-between row-span-2 rounded-[2rem] xs:p-6 xs:px-8 py-4 px-5 sm:col-span-1 col-span-2'>
 						<section>
 							<span className='uppercase text-xs xl:text-[.8rem] tracking-wide text-gray-400'>Projekt</span>
 							<h3 className='xl:text-[1.6rem] sm:text-xl text-2xl font-bold leading-6 mb-3'>Darmowe filmy</h3>
@@ -366,7 +366,7 @@ export default function Home() {
 								'radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);',
 						}}>
 						<FontAwesomeIcon className='h-20' icon={faInstagram} />
-						<div className='w-10 h-10 bg-[#00000074] hover:w-12 hover:h-12 flex justify-center items-center transition-all rounded-full absolute right-6 bottom-6 hover:bottom-5 hover:right-5'>
+						<div className='w-10 h-10 bg-[#00000074] hover:w-12 hover:h-12 flex justify-center items-center transition-all rounded-full absolute right-4 bottom-4 sm:right-6 sm:bottom-6 hover:bottom-5 hover:right-5'>
 							<FontAwesomeIcon className='h-5 text-orange-50 brightness-90' icon={faArrowRight} />
 						</div>
 					</a>
@@ -375,7 +375,7 @@ export default function Home() {
 						target='_blank'
 						className='w-full h-full relative p-4 bg-[#171515] rounded-[2rem] flex justify-center items-center lg:col-span-1 md:col-span-2'>
 						<FontAwesomeIcon className='h-20' icon={faGithub} />
-						<div className='w-10 h-10 bg-[#00000074] hover:w-12 hover:h-12 transition-all rounded-full absolute right-6 bottom-6 flex items-center justify-center hover:bottom-5 hover:right-5'>
+						<div className='w-10 h-10 bg-[#00000074] hover:w-12 hover:h-12 transition-all rounded-full absolute right-4 bottom-4 sm:right-6 sm:bottom-6 flex items-center justify-center hover:bottom-5 hover:right-5'>
 							<FontAwesomeIcon className='h-5 text-orange-50 brightness-90' icon={faArrowRight} />
 						</div>
 					</a>
