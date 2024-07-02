@@ -10,14 +10,13 @@
   }
 }
 html {
-  --cc-bg: orange;
-  --dark-opacited-85: rgba(5, 5, 5, 0.55);
-  --cc-secondary-color: #fff;
-  --cc-btn-primary-bg: #63E6BE;
-  --cc-btn-primary-color: #fff;
-  --cc-btn-primary-hover-color: #fff;
-  --cc-btn-primary-hover-bg: #47a589;
-  --cc-separator-border-color: #505050;
+  --cc-bg: rgba(27, 27, 27, 0.7) !important;
+  --cc-secondary-color: #fff !important;
+  --cc-btn-primary-bg: #63E6BE !important;
+  --cc-btn-primary-color: #fff !important;
+  --cc-btn-primary-hover-color: #fff !important;
+  --cc-btn-primary-hover-bg: #47a589 !important;
+  --cc-separator-border-color: #505050 !important;
 }
 
 .mapboxgl-ctrl-logo {
