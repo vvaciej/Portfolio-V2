@@ -79,30 +79,30 @@ export default function Home({ params }: params) {
 										myImagesTransform === 'secondSlide'
 											? 'translate-x-[-126%]'
 											: myImagesTransform === 'thirdSlide'
-											? 'translate-x-[-242%]'
+											? 'translate-x-[-250%]'
 											: 'translate-x-0'
 									} transition-transform duration-500 relative h-full w-full flex`}>
 									<Image
 										priority
 										height={1024}
 										width={576}
-										className='object-cover absolute top-[-2rem] xs:top-[-3.5rem] sm:top-[-2rem] xl:top-[-3rem] scale-[140%] xs:scale-[134%] sm:scale-[145%] xl:scale-[139%]'
-										src='https://i.ibb.co/2qBks6M/448974962-1521669402065793-421239235051550492-n.jpg'
+										className='object-cover absolute top-[-2rem] xs:top-[-3.5rem] sm:top-[-2rem] xl:top-[-3rem] scale-[140%] xs:scale-[133%] sm:scale-[145%] xl:scale-[139%]'
+										src='https://i.ibb.co/fHX9FSt/448974962-1521669402065793-421239235051550492-n-magicstudio-0rjvo6hlghtb.png'
 										alt='picture-of-my-face'
 									/>
 									<Image
 										height={1024}
 										width={576}
 										priority
-										className='object-cover absolute top-[-3rem] sm:top-[-2rem] xl:top-[-2.7rem] scale-[118%] left-[124.5%]'
-										src='https://i.ibb.co/g4GwYVT/448794891-995839758513458-3133694217385930912-n-1.jpg'
-										alt='picture-of-my-face'
+										className='object-cover absolute h-full scale-125 w-full left-[121.95%]'
+										src='https://i.ibb.co/xzH1qJB/448268024-983397733259880-6468480579347296530-n.jpg'
+										alt='picture-of-me'
 									/>
 									<Image
 										height={1024}
 										width={576}
 										priority
-										className='object-cover absolute top-[-4rem] sm:top-[-2rem] scale-[121%] xl:scale-[113%] left-[243%]'
+										className='object-cover absolute top-[-6rem] sm:top-[-4rem] scale-[120%] sm:scale-[115.8%] xl:scale-[113%] left-[250%]'
 										src='https://i.ibb.co/hZdFkpp/448725510-1013649933488125-530744277301084544-n-1.jpg'
 										alt='picture-of-my-dog'
 									/>
