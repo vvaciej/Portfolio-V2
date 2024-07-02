@@ -31,7 +31,7 @@ export default function Home({ params }: params) {
 					<div className='w-full h-full font-[system-ui] flex items-center flex-col font-semibold text-[#eee]'>
 						<header className='xl:h-40 sm:w-full md:h-32 h-full md:py-0 py-8 relative flex items-center justify-center md:flex-row flex-col xs:w-[18rem]'>
 							<div className='xl:w-[70rem] lg:w-[60rem] md:w-[44rem] sm:w-[30rem] xs:w-[22rem] xxs:w-[18rem] w-[91%] z-10 relative flex justify-between items-center'>
-								<span className='text-[#ffffffc4] xl:text-md text-sm leading-4'>&copy; 2024 maciejskok</span>
+								<span className='text-[#ffffffc4] xl:text-md sm:text-sm text-xs sm:leading-4 leading-3'>&copy; 2024 maciejskok</span>
 								<nav className='md:flex hidden h-full w-max md:w-max py-1 ml-16 bg-[#131315] px-[.3rem] rounded-full'>
 									<button className='h-full w-max bg-[#2C2C2E] px-4 py-1 rounded-full xl:text-md text-sm'>
 										{t('Home page')}
@@ -65,11 +65,11 @@ export default function Home({ params }: params) {
 										"Hey! I'm Maciek, I'm 20 years old and my passion is programming websites which I've been learning to do for over a year. I would be happy to program you a business card or more complex website at a very low price, contact me by email or phone :)."
 									)}
 								</p>
-								<section className='xl:mt-8 sm:mt-4 mt-6'>
+								<section className='xl:mt-6 sm:mt-4 mt-6'>
 									<a
 										href='tel:+48795369308'
-										className='border-4 border-blue-500 py-1 px-4 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white xl:text-[1rem] sm:text-sm xs:text-md text-[.88rem] cursor-pointer hover:scale-105 transition-all'>
-										{t('Call me')}: +48 795 369 308
+										className='border-4 border-blue-500 py-1 sm:px-4 px-2 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white xl:text-[1rem] sm:text-sm xs:text-md text-[.85rem] cursor-pointer hover:scale-105 transition-all'>
+										{t('Call me')} +48 795 369 308
 									</a>
 								</section>
 							</div>
@@ -258,12 +258,12 @@ export default function Home({ params }: params) {
 							<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem] flex sm:items-center xs:p-7 p-5 justify-between sm:flex-row flex-col'>
 								<section className='flex justify-between w-full'>
 									<img
-										className='xl:h-56 sm:h-44 h-40 rounded-2xl'
+										className='xl:h-56 sm:h-44 h-36 rounded-2xl'
 										src='https://i.scdn.co/image/ab67616d0000b2738a31195a371b2233456f6c07'
 										alt='spotify-artist-image'
 									/>
 									<img
-										className='xl:h-14 sm:h-12 h-16 sm:hidden block'
+										className='xl:h-14 h-12 sm:hidden block'
 										src='https://registe.me/img/spotify-logo.svg'
 										alt='spotify-logo'
 									/>
