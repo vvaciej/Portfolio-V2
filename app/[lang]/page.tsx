@@ -65,7 +65,7 @@ export default function Home({ params }: params) {
 								target='_blank'
 								className='w-full relative h-full p-4 bg-[#2C2C2E] rounded-[2rem] flex justify-center items-center bg-gradient-to-r from-purple-600 to-orange-400'>
 								<FontAwesomeIcon className='h-20' icon={faInstagram} />
-								<div className='w-10 h-10 bg-[#00000074] hover:w-12 hover:h-12 flex justify-center items-center transition-all rounded-full absolute right-4 bottom-4 sm:right-6 sm:bottom-6 hover:bottom-5 hover:right-5'>
+								<div className='w-10 h-10 bg-[#00000074] hover:w-12 hover:h-12 flex justify-center items-center n-all rounded-full absolute right-4 bottom-4 sm:right-6 sm:bottom-6 hover:bottom-5 hover:right-5'>
 									<FontAwesomeIcon className='h-5 text-orange-50 brightness-90' icon={faArrowRight} />
 								</div>
 							</a>
