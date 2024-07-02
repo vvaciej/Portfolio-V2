@@ -10,6 +10,17 @@
   }
 }
 
+html {
+  --cc-bg: orange;
+  --dark-opacited-85: rgba(5, 5, 5, 0.55);
+  --cc-secondary-color: #fff;
+  --cc-btn-primary-bg: #63E6BE;
+  --cc-btn-primary-color: #fff;
+  --cc-btn-primary-hover-color: #fff;
+  --cc-btn-primary-hover-bg: #47a589;
+  --cc-separator-border-color: #505050;
+}
+
 .mapboxgl-ctrl-logo {
   display: none !important;
 }
