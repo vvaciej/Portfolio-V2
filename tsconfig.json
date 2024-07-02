@@ -21,6 +21,6 @@
 			"@/*": ["./*"]
 		}
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/helpers/SpotifyAPI.jsx"],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/helpers/SpotifyAPI.jsx", "app/APIS/SpotifyApi.tsx"],
 	"exclude": ["node_modules"]
 }
