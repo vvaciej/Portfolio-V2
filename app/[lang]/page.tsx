@@ -18,8 +18,8 @@ export default function Home({ params }: params) {
 	const [myImagesTransform, setMyImagesTransform] = useState('firstSlide');
 
 	useEffect(() => {
-		document.cookie = `langChoosed=${params.lang}`
-	}, [params.lang])
+		document.cookie = `langChoosed=${params.lang}`;
+	}, [params.lang]);
 
 	const { t } = useTranslation();
 	useDocumentTitle(`Portfolio | Maciek Skokowski`);
@@ -58,18 +58,18 @@ export default function Home({ params }: params) {
 									Maciek Skokowski
 								</h1>
 								<p className='xl:mt-1 lg:text-xl text-lg sm:text-lg xl:text-[1.32rem] select-none leading-5 sm:mb-0 mb-1 sm:mt-0 mt-1'>
-									Samouk, front-end developer w Warszawie
+									{t('Self taught, front-end developer in Warsaw')}
 								</p>
 								<p className='font-normal sm:text-center xl:mt-3 lg:mt-2 mt-1 text-[0.86rem] select-none leading-5 xl:text-[1rem]'>
-									Hej! Jestem Maciek, mam 20 lat i moją pasją jest programowanie stron internetowych których uczę się
-									robić od ponad roku. Chętnie zaprogramuje Tobie stronę wizytówke czy bardziej rozbudowaną w bardzo
-									niskiej cenie, skontaktuj się ze mną mailowo lub telefonicznie :).
+									{t(
+										"Hey! I'm Maciek, I'm 20 years old and my passion is programming websites which I've been learning to do for over a year. I would be happy to program you a business card or more complex website at a very low price, contact me by email or phone :)."
+									)}
 								</p>
 								<section className='xl:mt-8 sm:mt-4 mt-6'>
 									<a
 										href='tel:+48795369308'
 										className='border-4 border-blue-500 py-1 px-4 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white xl:text-[1rem] sm:text-sm xs:text-md text-[.88rem] cursor-pointer hover:scale-105 transition-all'>
-										Zadzwoń: 795 369 308
+										{t('Call me')}: +48 795 369 308
 									</a>
 								</section>
 							</div>
@@ -153,99 +153,91 @@ export default function Home({ params }: params) {
 									<FontAwesomeIcon className='h-4 text-orange-50 brightness-90' icon={faChevronRight} />
 								</button>
 							</div>
-							<div className='w-full h-full sm:col-span-1 col-span-2 bg-[#2C2C2E] row-span-2 rounded-[2rem] xs:p-6 p-4 xl:p-8 flex flex-col justify-center'>
-								<h2 className='xl:text-3xl text-2xl font-bold sm:text-left text-center'>Nauka</h2>
-								<section className='lg:mt-6 mt-5 xl:mt-8'>
-									<section className='grid sm:grid-cols-1 sm:gap-0 gap-4 grid-cols-2 sm:flex-col flex-row'>
-										<div className='sm:border-b-[2px] border-zinc-900 pb-3 flex xs:gap-2 gap-1 flex-col'>
-											<section className='flex xs:gap-2 sm:flex-row flex-col items-center'>
-												<section className='sm:block flex sm:mr-1 md:mr-2'>
-													<img
-														className='sm:w-16 h-6 mb-1'
-														src='https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg'
-														alt='html-logo'
-													/>
-													<img
-														className='sm:w-16 h-6'
-														src='https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg'
-														alt='css-logo'
-													/>
-												</section>
-												<p className='leading-[1.05rem] xl:text-md sm:text-sm text-[.92rem] sm:text-left text-center'>
-													Budowanie responsywnych stron z HTML i CSS
-												</p>
+							<div className='w-full h-full sm:col-span-1 col-span-2 bg-[#2C2C2E] row-span-2 rounded-[2rem] xs:p-5 p-4 xl:p-8 flex flex-col justify-center'>
+								<h2 className='xl:text-3xl text-2xl font-bold text-center'>{t('Learning')}</h2>
+								<section className='lg:mt-6 mt-5 sm:block flex flex-col gap-6'>
+									<section className='grid sm:grid-cols-1 sm:gap-0 gap-6 grid-cols-2'>
+										<div className='sm:border-b-[2px] border-zinc-900 sm:pb-3 xl:py-4 xs:gap-2 gap-2 grid sm:grid-cols-[1fr,6fr]'>
+											<section className='flex sm:flex-col flex-row justify-center items-center gap-1'>
+												<img
+													className='h-6'
+													src='https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg'
+													alt='html-logo'
+												/>
+												<img
+													className='h-6'
+													src='https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg'
+													alt='css-logo'
+												/>
 											</section>
-											<span className='uppercase text-xs text-gray-400 xl:ml-11 sm:ml-10 sm:text-left text-center'>
-												Ukończone, 2msc
-											</span>
+											<section className='text-center sm:text-left flex flex-col md:gap-1 gap-2'>
+												<p className='leading-[1.05rem] xl:text-md sm:text-sm text-[.92rem] sm:text-left text-center'>
+													{t('Building responsive sites with HTML and CSS')}
+												</p>
+												<span className='uppercase text-xs text-gray-400 sm:text-left text-center leading-4 block'>
+													{t('Completed')}, 2 {t('months')}
+												</span>
+											</section>
 										</div>
-										<div className='sm:border-b-[2px] xl:mt-4 sm:mt-3 border-zinc-900 xl:pb-3 pb-2 flex gap-1 flex-col'>
-											<section className='flex sm:gap-3 xs:gap-3 gap-1 sm:flex-row flex-col sm:mb-0 mb-1 items-center'>
-												<section>
-													<img
-														className='sm:h-7 h-6 sm:mb-1'
-														src='https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg'
-														alt='js-logo'
-													/>
-													<img
-														className='h-7 xl:block hidden'
-														src='https://i.ibb.co/Lr0WsP7/typescript-icon.png'
-														alt='ts-logo'
-													/>
-												</section>
-												<p className='leading-[1.05rem] xl:text-md sm:text-sm text-[.92rem] sm:text-left text-center'>
-													Kompletny kurs Javascript
-												</p>
+										<div className='sm:border-b-[2px] border-zinc-900 xs:gap-2 xl:py-4 sm:py-3 gap-2 grid sm:grid-cols-[1fr,6fr]'>
+											<section className='flex sm:flex-col flex-row justify-center items-center gap-1'>
+												<img
+													className='h-6'
+													src='https://upload.vectorlogo.zone/logos/javascript/images/239ec8a4-163e-4792-83b6-3f6d96911757.svg'
+													alt='js-logo'
+												/>
+												<img className='h-6' src='https://i.ibb.co/Lr0WsP7/typescript-icon.png' alt='ts-logo' />
 											</section>
-											<span className='uppercase text-xs text-gray-400 xl:ml-10 sm:ml-10 sm:text-left text-center'>
-												Ukończone, 3msc
-											</span>
+											<section className='text-center sm:text-left flex flex-col md:gap-1 gap-2'>
+												<p className='leading-[1.05rem] xl:text-md sm:text-sm text-[.92rem] sm:text-left text-center'>
+													{t('Full course Javascript and Typescript')}
+												</p>
+												<span className='uppercase text-xs text-gray-400 sm:text-left text-center leading-4 block'>
+													{t('Completed')}, 4 {t('months')}
+												</span>
+											</section>
 										</div>
 									</section>
-									<section className='grid sm:grid-cols-1 sm:gap-0 gap-4 grid-cols-2 sm:flex-col flex-row'>
-										<div className='sm:border-b-[2px] xl:mt-4 mt-3 border-zinc-900 pb-3 flex gap-1 flex-col'>
-											<section className='flex sm:gap-3 xs:gap-3 gap-1 sm:flex-row flex-col items-center'>
-												<section>
-													<img
-														className='sm:h-11 h-6'
-														src='https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg'
-														alt='reactjs-logo'
-													/>
-													<img
-														className='min-h-2 max-h-7 xl:block hidden'
-														src='https://i.ibb.co/28n9LQy/nextjs-icon.png'
-														alt='nextjs-logo'
-													/>
-												</section>
-												<p className='leading-[1.05rem] xl:text-md sm:text-sm text-[.92rem] sm:text-left text-center sm:mb-0 mb-1'>
-													Kompletny kurs podstaw: React i Next
-												</p>
+									<section className='grid sm:grid-cols-1 sm:gap-0 gap-6 grid-cols-2 sm:flex-col flex-row'>
+										<div className='sm:border-b-[2px] border-zinc-900 xl:py-4 xs:gap-2 sm:py-3 gap-2 grid sm:grid-cols-[1fr,6fr]'>
+											<section className='flex sm:flex-col flex-row justify-center items-center gap-1'>
+												<img
+													className='h-6'
+													src='https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg'
+													alt='react-logo'
+												/>
+												<img className='h-6' src='https://i.ibb.co/28n9LQy/nextjs-icon.png' alt='next-logo' />
 											</section>
-											<span className='uppercase text-xs sm:text-left text-center text-gray-400 xl:ml-11 sm:ml-10'>
-												Ukończone, 2msc
-											</span>
-										</div>
-										<div className='xl:mt-4 mt-3 xl:pb-3 flex flex-col'>
-											<section className='flex sm:flex-row flex-col sm:gap-3 xs:gap-3 gap-1 items-center'>
-												<section className='sm:block flex gap-2 xl:mr-2'>
-													<img
-														className=' sm:w-12 mb-1 h-6'
-														src='https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg'
-														alt='nodejs-logo'
-													/>
-													<img
-														className='sm:w-12 h-6'
-														src='https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg'
-														alt='expressjs-logo'
-													/>
-												</section>
+											<section className='text-center sm:text-left flex flex-col md:gap-1 gap-2'>
 												<p className='leading-[1.05rem] xl:text-md sm:text-sm text-[.92rem] sm:text-left text-center'>
-													Kompletny kurs podstaw Node js, Express (Backend)
+													{t('Full course React and Next')}
 												</p>
+												<span className='uppercase text-xs text-gray-400 sm:text-left text-center leading-4 block'>
+													{t('Completed')}, 2 {t('months')}
+												</span>
 											</section>
-											<span className='uppercase text-xs text-gray-400 xl:ml-11 md:ml-9 sm:ml-10 sm:text-left text-center mt-2'>
-												0% Ukończone
-											</span>
+										</div>
+										<div className='xs:gap-2 sm:py-3 gap-2 grid xl:py-4 sm:grid-cols-[1fr,6fr]'>
+											<section className='flex sm:flex-col flex-row justify-center items-center gap-1'>
+												<img
+													className='h-6'
+													src='https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg'
+													alt='nodejs-logo'
+												/>
+												<img
+													className='h-6'
+													src='https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg'
+													alt='expressjs-logo'
+												/>
+											</section>
+											<section className='text-center sm:text-left flex flex-col md:gap-1 gap-2'>
+												<p className='leading-[1.05rem] xl:text-md sm:text-sm text-[.92rem] sm:text-left text-center'>
+													{t('Full course basics NodeJS, Express')}
+												</p>
+												<span className='uppercase text-xs text-gray-400 sm:text-left text-center leading-4 block'>
+													{t('Completed')}, 0%
+												</span>
+											</section>
 										</div>
 									</section>
 								</section>
@@ -253,12 +245,13 @@ export default function Home({ params }: params) {
 							<div className='w-full h-full bg-[#2C2C2E] p-3 px-6 rounded-[2rem] lg:col-span-1 md:col-span-2 col-span-2 sm:col-span-1'>
 								<section className='relative lg:bottom-1 sm:bottom-4 md:bottom-5 flex justify-center flex-col items-center'>
 									<img
-										className='lg:top-5 sm:top-8 xl:top-6 lg:h-max xs:h-32 h-28 md:h-36 sm:h-24 top-[-30%] xs:top-[-40%] sm:relative absolute'
+										className='lg:top-5 sm:top-8 xl:top-6 lg:h-max xs:h-32 h-28 md:h-36 sm:h-24 top-[-10%] xs:top-[-40%] sm:relative absolute'
 										src='https://i.ibb.co/VpHR2Dr/fb3274a5-f14e-4488-84fe-13cd5238b192.png'
 										alt='wsb-merito-warszawa-logo'
 									/>
-									<p className='xl:text-[1.2rem] md:text-lg lg:text-[1.05rem] font-semibold text-center lg:leading-5 md:leading-6 xs:leading-5 leading-[1.2rem] xl:leading-6 sm:mt-3 md:mt-0 relative sm:top-0 xs:top-20 top-[4.3rem]'>
-										Student informatyki drugiego semestru na uczelni <b className='font-bold'>WSB Merito w Warszawie</b>
+									<p className='xl:text-[1.2rem] md:text-lg lg:text-[1.05rem] font-semibold text-center lg:leading-5 md:leading-6 xs:leading-5 leading-[1.2rem] xl:leading-6 sm:mt-3 md:mt-0 relative sm:top-0 xs:top-20 top-[5rem]'>
+										{t('Second semester college computer science ')}
+										<b className='font-bold'>{t('at WSB in Warsaw')}</b>
 									</p>
 								</section>
 							</div>
@@ -286,7 +279,7 @@ export default function Home({ params }: params) {
 											<div className='animate-[playing_0.8s_infinite] w-[3px] h-[10px] rounded-sm bg-[#2ad45e] mr-[3px]'></div>
 											<div className='animate-[playing_1s_infinite] w-[3px] h-[10px] rounded-sm bg-[#2ad45e] mr-[3px]'></div>
 											<div className='animate-[playing_1.2s_infinite] w-[3px] h-[10px] rounded-sm bg-[#2ad45e] mr-[3px]'></div>
-											<h3 className='text-green-500 xl:mb-1 ml-1 w-max'>Ostatnio słuchane</h3>
+											<h3 className='text-green-500 xl:mb-1 ml-1 w-max'>{t('Last played')}</h3>
 										</section>
 										<h1 className='xl:text-2xl sm:text-xl text-2xl font-extrabold sm:leading-6 leading-7'>
 											Unforgettable
@@ -303,11 +296,13 @@ export default function Home({ params }: params) {
 							</div>
 							<div className='w-full h-full bg-[#2C2C2E] flex-col justify-between rounded-[2rem] sm:p-6 xs:px-6 xs:py-4 px-5 py-3 xl:px-8 row-span-2 sm:col-span-1 col-span-2 flex'>
 								<section>
-									<span className='uppercase text-xs xl:text-[.8rem] tracking-wide text-gray-400'>Projekt</span>
+									<span className='uppercase text-xs xl:text-[.8rem] tracking-wide text-gray-400'>{t('Project')}</span>
 									<h3 className='xl:text-[1.6rem] sm:text-xl text-2xl font-bold leading-6 mb-2 xl:mb-4'>
-										Psychoterapeuta
+										{t('Psychotherapist')}
 									</h3>
-									<span className='uppercase text-xs xl:text-[.8rem] text-gray-400 tracking-wide'>technologie</span>
+									<span className='uppercase text-xs xl:text-[.8rem] text-gray-400 tracking-wide'>
+										{t('technologies')}
+									</span>
 									<section className='flex items-center gap-1 mt-1'>
 										<img
 											className='xl:h-5 sm:h-4 h-5'
@@ -341,15 +336,15 @@ export default function Home({ params }: params) {
 										href='https://martamoszko.pl'
 										target='_blank'
 										className='px-5 bg-[#1C1C1E] w-max rounded-full py-2 hover:scale-105 transition-transform text-sm xl:text-md'>
-										Zobacz projekt
+										{t('Check project')}
 									</a>
 								</div>
 							</div>
 							<div className='w-full h-full bg-[#2C2C2E] flex flex-col justify-between row-span-2 rounded-[2rem] xs:py-4 sm:p-6 xs:px-6 py-4 px-5 sm:col-span-1 col-span-2'>
 								<section>
-									<span className='uppercase text-xs xl:text-[.8rem] tracking-wide text-gray-400'>Projekt</span>
-									<h3 className='xl:text-[1.6rem] sm:text-xl text-2xl font-bold leading-6 mb-3'>Darmowe filmy</h3>
-									<span className='uppercase text-[.8rem] text-gray-400 tracking-wide'>technologie</span>
+									<span className='uppercase text-xs xl:text-[.8rem] tracking-wide text-gray-400'>{t('Project')}</span>
+									<h3 className='xl:text-[1.6rem] sm:text-xl text-2xl font-bold leading-6 mb-3'>{t('Free films')}</h3>
+									<span className='uppercase text-[.8rem] text-gray-400 tracking-wide'>{t('technologies')}</span>
 									<section className='flex items-center gap-1 mt-1'>
 										<img
 											className='xl:h-5 h-4'
@@ -383,7 +378,7 @@ export default function Home({ params }: params) {
 										href='https://vvaciej.codes'
 										target='_blank'
 										className='px-5 bg-[#1C1C1E] text-sm xl:text-md w-max rounded-full py-2 hover:scale-105 transition-transform'>
-										Zobacz projekt
+										{t('Check project')}
 									</a>
 								</div>
 							</div>
