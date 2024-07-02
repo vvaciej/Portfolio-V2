@@ -4,7 +4,7 @@ import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faArrowRight, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import useDocumentTitle from '../helpers/PageTitle';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'next-i18next';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
