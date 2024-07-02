@@ -9,9 +9,18 @@ const Page = () => {
 	};
 
 	useEffect(() => {
-		if (window.location.pathname === '/' && window.location.hostname === 'www.maciejskokowski.dev') {
-			window.location.href = `/${getCookie('langChoosed') === 'english' ? 'en' : 'pl'}`;
-			document.cookie = `langChoosed=${getPageLangFromUrl()}`;
+		const currentPath = window.location.pathname;
+		const hostname = window.location.hostname;
+		const langChoosed = getCookie('langChoosed');
+
+		if (currentPath === '/' && hostname === 'www.maciejskokowski.dev') {
+			const langToRedirect = langChoosed === 'english' ? 'en' : 'pl';
+			window.location.href = `/${langToRedirect}`;
+		} else {
+			const pageLang = getPageLangFromUrl();
+			if (pageLang) {
+				document.cookie = `langChoosed=${pageLang}`;
+			}
 		}
 	}, []);
 };
