@@ -385,11 +385,7 @@ export default function Home({ params }: params) {
 							<a
 								href='https://www.instagram.com/vvaciej_/'
 								target='_blank'
-								className='w-full relative h-full p-4 bg-[#2C2C2E] rounded-[2rem] flex justify-center items-center'
-								style={{
-									background:
-										'radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);',
-								}}>
+								className='w-full relative h-full p-4 bg-[#2C2C2E] rounded-[2rem] flex justify-center items-center bg-gradient-to-r from-purple-600 to-orange-400'>
 								<FontAwesomeIcon className='h-20' icon={faInstagram} />
 								<div className='w-10 h-10 bg-[#00000074] hover:w-12 hover:h-12 flex justify-center items-center transition-all rounded-full absolute right-4 bottom-4 sm:right-6 sm:bottom-6 hover:bottom-5 hover:right-5'>
 									<FontAwesomeIcon className='h-5 text-orange-50 brightness-90' icon={faArrowRight} />

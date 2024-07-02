@@ -5,7 +5,7 @@ const getLanguageFromUrl = () => {
 	if (typeof window !== 'undefined') {
 		const url = window.location.pathname;
 		return url.startsWith('/en') ? 'en' : 'pl';
-	}
+	} 
 	return 'pl';
 };
 
