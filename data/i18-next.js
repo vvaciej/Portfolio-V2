@@ -17,12 +17,6 @@ i18next.use(initReactI18next).init({
 				'Im available rn': 'Aktualnie jestem dostępny',
 			},
 		},
-		en: {
-			translation: {
-				'Home page': 'Home page',
-				'Im available rn': 'I am available right now',
-			},
-		},
 	},
 	lng: getLanguageFromUrl(),
 });

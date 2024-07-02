@@ -3,9 +3,9 @@
 import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faArrowRight, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import useDocumentTitle from '@/helpers/PageTitle';
+import useDocumentTitle from '../helpers/PageTitle';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 interface params {
@@ -14,8 +14,12 @@ interface params {
 	};
 }
 
-export default function Home({ params }: any) {
+export default function Home({ params }: params) {
 	const [myImagesTransform, setMyImagesTransform] = useState('firstSlide');
+
+	useEffect(() => {
+		document.cookie = `langChoosed=${params.lang}`
+	}, [params.lang])
 
 	const { t } = useTranslation();
 	useDocumentTitle(`Portfolio | Maciek Skokowski`);

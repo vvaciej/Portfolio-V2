@@ -1,5 +1,5 @@
 'use client';
-import getCookie from '../helpers/GetCookie';
+import getCookie from './helpers/GetCookie';
 import { useEffect } from 'react';
 
 const Page = () => {
