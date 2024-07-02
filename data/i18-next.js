@@ -15,7 +15,7 @@ i18next.use(initReactI18next).init({
 			translation: {
 				'Home page': 'Strona główna',
 				'Im available rn': 'Aktualnie jestem dostępny',
-				'Self taught, front-end developer in Poznań': 'Samouk, front-end developer w Poznaniu',
+				'Self taught, front-end developer in Poland': 'Samouk, front-end developer w Poznaniu',
 				"Hey! I'm Maciek, I'm 20 years old and my passion is programming websites which I've been learning to do for over a year. I would be happy to program you a business card or more complex website at a very low price, contact me by email or phone :).":
 					'Hej! Jestem Maciek, mam 20 lat i moją pasją jest programowanie stron internetowych których uczę się robić od ponad roku. Chętnie zaprogramuje Tobie stronę wizytówke czy bardziej rozbudowaną w bardzo niskiej cenie, skontaktuj się ze mną mailowo lub telefonicznie :).',
 				'Call me': 'Zadzwoń',

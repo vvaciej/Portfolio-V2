@@ -17,7 +17,7 @@ export const AboutMeBlock = () => {
 				Maciek Skokowski
 			</h1>
 			<p className='xl:mt-1 lg:text-xl text-lg sm:text-lg xl:text-[1.32rem] select-none leading-5 sm:mb-0 mb-1 sm:mt-0 mt-1'>
-				{t('Self taught, front-end developer in Poznań')}
+				{t('Self taught, front-end developer in Poland')}
 			</p>
 			<p className='font-normal sm:text-center xl:mt-3 lg:mt-2 mt-1 text-[0.86rem] select-none leading-5 xl:text-[1rem]'>
 				{t(
