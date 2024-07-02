@@ -15,7 +15,7 @@ i18next.use(initReactI18next).init({
 			translation: {
 				'Home page': 'Strona główna',
 				'Im available rn': 'Aktualnie jestem dostępny',
-				'Self taught, front-end developer in Warsaw': 'Samouk, front-end developer w Warszawie',
+				'Self taught, front-end developer in Poznań': 'Samouk, front-end developer w Poznaniu',
 				"Hey! I'm Maciek, I'm 20 years old and my passion is programming websites which I've been learning to do for over a year. I would be happy to program you a business card or more complex website at a very low price, contact me by email or phone :).":
 					'Hej! Jestem Maciek, mam 20 lat i moją pasją jest programowanie stron internetowych których uczę się robić od ponad roku. Chętnie zaprogramuje Tobie stronę wizytówke czy bardziej rozbudowaną w bardzo niskiej cenie, skontaktuj się ze mną mailowo lub telefonicznie :).',
 				'Call me': 'Zadzwoń',
@@ -27,7 +27,7 @@ i18next.use(initReactI18next).init({
 				'Full course React and Next': 'Kompletny kurs podstaw: React i Next',
 				'Full course basics NodeJS, Express': 'Kompletny kurs podstaw NodeJS, Express',
 				'Second semester college computer science ': 'Student informatyki drugiego semestru ',
-				'at WSB in Warsaw': 'na uczelni WSB Merito w Warszawie',
+				'at WSB in Poznań': 'na uczelni WSB Merito w Poznaniu',
 				'Last played': 'Ostatnio słuchane',
 				Project: 'Projekt',
 				Psychotherapist: 'Psychoterapeuta',

@@ -9,3 +9,23 @@
     height: 3px;
   }
 }
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
+.mapboxgl-ctrl {
+  display: none !important;
+}
+
+.mapboxgl-marker {
+  background-image: url('https://i.ibb.co/pz6HFkR/449331368-1616057262298255-3462192169258345810-n-removebg-preview.png') !important;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  svg {
+    display: none;
+  }
+}

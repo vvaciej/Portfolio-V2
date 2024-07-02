@@ -7,6 +7,9 @@ import useDocumentTitle from '../helpers/PageTitle';
 import { useTranslation } from 'next-i18next';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import 'mapbox-gl/dist/mapbox-gl.css';
+import { Marker } from 'react-map-gl';
+import Map from 'react-map-gl';
 
 interface params {
 	params: {
@@ -14,8 +17,32 @@ interface params {
 	};
 }
 
+const initialViewState = {
+	latitude: 52.3716892,
+	longitude: 16.8983987,
+	zoom: 10,
+	bearing: 0,
+	pitch: 0,
+};
+
 export default function Home({ params }: params) {
 	const [myImagesTransform, setMyImagesTransform] = useState('firstSlide');
+
+	const [settings, setSettings] = useState({
+		scrollZoom: true,
+		boxZoom: true,
+		dragRotate: true,
+		dragPan: true,
+		keyboard: true,
+		doubleClickZoom: true,
+		touchZoomRotate: true,
+		touchPitch: true,
+		AttributionControl: false,
+		minZoom: 0,
+		maxZoom: 20,
+		minPitch: 0,
+		maxPitch: 85,
+	});
 
 	useEffect(() => {
 		document.cookie = `langChoosed=${params.lang}`;
@@ -31,15 +58,17 @@ export default function Home({ params }: params) {
 					<div className='w-full h-full font-[system-ui] flex items-center flex-col font-semibold text-[#eee]'>
 						<header className='xl:h-40 sm:w-full md:h-32 h-full md:py-0 py-8 relative flex items-center justify-center md:flex-row flex-col xs:w-[18rem]'>
 							<div className='xl:w-[70rem] lg:w-[60rem] md:w-[44rem] sm:w-[30rem] xs:w-[22rem] xxs:w-[18rem] w-[91%] z-10 relative flex justify-between items-center'>
-								<span className='text-[#ffffffc4] xl:text-md sm:text-sm text-xs sm:leading-4 leading-3'>&copy; 2024 maciejskok</span>
+								<span className='text-[#ffffffc4] xl:text-md sm:text-sm text-xs sm:leading-4 leading-3'>
+									&copy; 2024 maciejskok
+								</span>
 								<nav className='md:flex hidden h-full w-max md:w-max py-1 ml-16 bg-[#131315] px-[.3rem] rounded-full'>
-									<button className='h-full w-max bg-[#2C2C2E] px-4 py-1 rounded-full xl:text-md text-sm'>
+									<button className='h-full w-max bg-[#2C2C2E] px-4 py-2 rounded-full xl:text-md text-sm'>
 										{t('Home page')}
 									</button>
 								</nav>
 								<a
 									href='mailto:maciejskok@proton.me'
-									className='border-4 border-blue-500 py-1 xs:px-4 px-2 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white cursor-pointer hover:scale-105 transition-all xl:text-md xs:text-sm text-[.85rem]'>
+									className='border-4 border-blue-500 sm:px-4 py-1 xs:px-4 px-2 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white cursor-pointer hover:scale-105 transition-all xl:text-[.95rem] xs:text-sm text-[.85rem]'>
 									maciejskok@proton.me
 								</a>
 							</div>
@@ -58,7 +87,7 @@ export default function Home({ params }: params) {
 									Maciek Skokowski
 								</h1>
 								<p className='xl:mt-1 lg:text-xl text-lg sm:text-lg xl:text-[1.32rem] select-none leading-5 sm:mb-0 mb-1 sm:mt-0 mt-1'>
-									{t('Self taught, front-end developer in Warsaw')}
+									{t('Self taught, front-end developer in Poznań')}
 								</p>
 								<p className='font-normal sm:text-center xl:mt-3 lg:mt-2 mt-1 text-[0.86rem] select-none leading-5 xl:text-[1rem]'>
 									{t(
@@ -69,7 +98,7 @@ export default function Home({ params }: params) {
 									<a
 										href='tel:+48795369308'
 										className='border-4 border-blue-500 py-1 sm:px-4 px-2 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white xl:text-[1rem] sm:text-sm xs:text-md text-[.85rem] cursor-pointer hover:scale-105 transition-all'>
-										{t('Call me')} +48 795 369 308
+										+48 795 369 308
 									</a>
 								</section>
 							</div>
@@ -102,7 +131,7 @@ export default function Home({ params }: params) {
 										height={1024}
 										width={576}
 										priority
-										className='object-cover absolute top-[-6rem] sm:top-[-4rem] scale-[120%] sm:scale-[115.8%] xl:scale-[113%] left-[250%]'
+										className='object-cover absolute top-[-4rem] sm:top-[-4rem] scale-[120%] sm:scale-[115.8%] xl:scale-[113%] left-[250%]'
 										src='https://i.ibb.co/hZdFkpp/448725510-1013649933488125-530744277301084544-n-1.jpg'
 										alt='picture-of-my-dog'
 									/>
@@ -251,7 +280,7 @@ export default function Home({ params }: params) {
 									/>
 									<p className='xl:text-[1.2rem] md:text-lg lg:text-[1.05rem] font-semibold text-center lg:leading-5 md:leading-6 xs:leading-5 leading-[1.2rem] xl:leading-6 sm:mt-3 md:mt-0 relative sm:top-0 xs:top-20 top-[5rem]'>
 										{t('Second semester college computer science ')}
-										<b className='font-bold'>{t('at WSB in Warsaw')}</b>
+										<b className='font-bold'>{t('at WSB in Poznań')}</b>
 									</p>
 								</section>
 							</div>
@@ -288,11 +317,16 @@ export default function Home({ params }: params) {
 									</section>
 								</section>
 							</div>
-							<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem]'>
-								<iframe
-									src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2439.1600748814762!2d20.96178647700158!3d52.31309775152704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ec99f9c2b9fc3%3A0x467c5fe4ea06d29f!2sMy%C5%9Bliborska%2C%20Warszawa!5e0!3m2!1spl!2spl!4v1719792322074!5m2!1spl!2spl'
-									className='h-full w-full rounded-3xl'
-									loading='lazy'></iframe>
+							<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem] overflow-hidden'>
+								<Map
+									initialViewState={initialViewState}
+									{...settings}
+									mapStyle='mapbox://styles/mapbox/dark-v9'
+									mapboxAccessToken={
+										'pk.eyJ1IjoidnZhY2llaiIsImEiOiJjbHk0cHRmYnAwNHFuMmpyM2RrNThtaGtrIn0.WgdfqjM7jnpSzxpCe_Gxbw'
+									}>
+									<Marker latitude={52.3716892} longitude={16.8983987}></Marker>
+								</Map>
 							</div>
 							<div className='w-full h-full bg-[#2C2C2E] flex-col justify-between rounded-[2rem] sm:p-6 xs:px-6 xs:py-4 px-5 py-3 xl:px-8 row-span-2 sm:col-span-1 col-span-2 flex'>
 								<section>
