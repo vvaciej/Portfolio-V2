@@ -18,6 +18,16 @@ export default function RootLayout({
 			<html lang='pl_PL'>
 				<head>
 					<meta name='theme-color' content='#63E6BE' />
+					<link
+						rel='icon'
+						href='https://i.ibb.co/nbDwxfd/png-transparent-moon-moon-atmosphere-monochrome-sphere-thumbnail-removebg-preview.png'
+					/>
+					<link
+						rel='apple-touch-icon'
+						href='https://i.ibb.co/nbDwxfd/png-transparent-moon-moon-atmosphere-monochrome-sphere-thumbnail-removebg-preview.png'
+					/>
+					<link rel="og:title" href="Maciej Skokowski | Porfolio" />
+					<link rel="og:description" href="Portfolio Maciej Skokowski Front-end developer w Poznaniu" />
 				</head>
 				<body className={inter.className}>{children}</body>
 			</html>
