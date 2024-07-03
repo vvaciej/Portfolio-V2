@@ -51,7 +51,7 @@ const pluginConfig: CookieConsentConfig = {
 			en: {
 				consentModal: {
 					description:
-						'Używamy plików cookie, aby zoptymalizować funkcjonalność witryny i zapewnić najlepszą możliwą obsługę.',
+						'We use cookies to optimize the functionality of the site and provide the best possible service',
 					acceptAllBtn: 'OK',
 				},
 				preferencesModal: {
