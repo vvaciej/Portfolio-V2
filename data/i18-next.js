@@ -5,7 +5,7 @@ const getLanguageFromUrl = () => {
 	if (typeof window !== 'undefined') {
 		const url = window.location.pathname;
 		return url.startsWith('/en') ? 'en' : 'pl';
-	} 
+	}
 	return 'pl';
 };
 
@@ -34,6 +34,7 @@ i18next.use(initReactI18next).init({
 				technologies: 'technologie',
 				'Check project': 'Zobacz projekt',
 				'Free films': 'Darmowe filmy',
+				'Download CV': 'Pobierz CV',
 			},
 		},
 	},

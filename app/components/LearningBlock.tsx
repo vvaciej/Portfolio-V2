@@ -72,7 +72,7 @@ export const LearningPath = () => {
 						</section>
 						<section className='text-center sm:text-left flex flex-col md:gap-1 gap-2'>
 							<p className='leading-[1.05rem] xl:text-md sm:text-sm text-[.92rem] sm:text-left text-center'>
-								{t('Full course basics NodeJS, Express')}
+								{t('Full course basics NodeJS, ExpressJS (Backend)')}
 							</p>
 							<span className='uppercase text-xs text-gray-400 sm:text-left text-center leading-4 block'>
 								{t('Completed')}, 0%

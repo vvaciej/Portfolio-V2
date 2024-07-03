@@ -14,7 +14,7 @@ import { Project1Block } from '../components/Project1Block';
 import { Project2Block } from '../components/Project2Block';
 import { Header } from '../components/Header';
 import { AboutMeBlock } from '../components/AboutMeBlock';
-import { SpotifyBlock } from '../components/SpotifyBlock';
+import { SpotifyBlock } from '../components/CVBlock';
 
 interface params {
 	params: {
@@ -46,11 +46,11 @@ export default function Home({ params }: params) {
 							<div className='w-full h-full bg-[#2C2C2E] p-3 px-6 rounded-[2rem] lg:col-span-1 md:col-span-2 col-span-2 sm:col-span-1'>
 								<section className='relative lg:bottom-1 sm:bottom-4 md:bottom-5 flex justify-center flex-col items-center'>
 									<img
-										className='lg:top-5 sm:top-8 xl:top-6 lg:h-max xs:h-32 h-28 md:h-36 sm:h-24 top-[-10%] xs:top-[-40%] sm:relative absolute'
+										className='lg:top-5 sm:top-8 md:top-4 xl:top-6 lg:h-max xs:h-32 h-28 md:h-36 sm:h-24 top-[-14%] xs:top-[-40%] sm:relative absolute'
 										src='https://i.ibb.co/VpHR2Dr/fb3274a5-f14e-4488-84fe-13cd5238b192.png'
 										alt='wsb-merito-warszawa-logo'
 									/>
-									<p className='xl:text-[1.2rem] md:text-lg lg:text-[1.05rem] font-semibold text-center lg:leading-5 md:leading-6 xs:leading-5 leading-[1.2rem] xl:leading-6 sm:mt-3 md:mt-0 relative sm:top-0 xs:top-20 top-[5rem]'>
+									<p className='xl:text-[1.2rem] md:text-lg lg:text-[1.05rem] font-semibold text-center lg:leading-5 md:leading-6 xs:leading-5 leading-[1.2rem] md:top-[-1rem] lg:top-0 xl:leading-6 sm:mt-3 md:mt-0 relative sm:top-0 xs:top-20 top-[4.5rem]'>
 										{t('Second semester college computer science ')}
 										<b className='font-bold'>{t('at WSB in Poznań')}</b>
 									</p>
