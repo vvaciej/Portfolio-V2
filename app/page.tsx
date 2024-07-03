@@ -23,6 +23,10 @@ const Page = () => {
 			}
 		}
 	}, []);
+
+	return <div className='h-full w-full bg-[#1C1C1E] justify-center flex items-center text-3xl'>
+		<div className='loader'></div>
+	</div>;
 };
 
 export default Page;
