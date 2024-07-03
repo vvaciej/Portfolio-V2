@@ -12,6 +12,11 @@ export const LearningPath = () => {
 						<section className='flex sm:flex-col flex-row justify-center items-center gap-1'>
 							<img className='h-6' src='https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg' alt='html-logo' />
 							<img className='h-6' src='https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg' alt='css-logo' />
+							<img
+								className='h-6'
+								src='https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg'
+								alt='tailwind-logo'
+							/>
 						</section>
 						<section className='text-center sm:text-left flex flex-col md:gap-1 gap-2'>
 							<p className='leading-[1.05rem] xl:text-md sm:text-sm text-[.92rem] sm:text-left text-center'>
