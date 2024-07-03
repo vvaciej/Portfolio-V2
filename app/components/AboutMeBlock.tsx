@@ -35,7 +35,7 @@ export const AboutMeBlock = () => {
 			) : (
 				<a
 					href='mailto:maciejskok@proton.me'
-					className='border-4 border-blue-500 sm:px-4 py-1 xs:px-4 px-2 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white cursor-pointer hover:scale-105 transition-all xl:text-[.95rem] xs:text-sm text-[.85rem] mt-2 w-max'>
+					className='border-4 border-blue-500 sm:px-4 py-1 xs:px-4 px-2 rounded-full bg-gradient-to-r from-blue-300 to-blue-500 text-white cursor-pointer hover:scale-105 transition-all xl:text-[.95rem] xs:text-sm text-[.85rem] mt-2 sm:mt-3 w-max'>
 					maciejskok@proton.me
 				</a>
 			)}
