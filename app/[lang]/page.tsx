@@ -14,7 +14,7 @@ import { Project1Block } from '../components/Project1Block';
 import { Project2Block } from '../components/Project2Block';
 import { Header } from '../components/Header';
 import { AboutMeBlock } from '../components/AboutMeBlock';
-import { SpotifyBlock } from '../components/CVBlock';
+import { SpotifyBlock } from '../components/FigmaBlock';
 
 interface params {
 	params: {

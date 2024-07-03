@@ -56,7 +56,7 @@ export const ImgCarousel = () => {
 				}}>
 				<FontAwesomeIcon className='h-4 text-orange-50 brightness-90' icon={faChevronLeft} />
 			</button>
-			<section className='flex gap-3 absolute xl:bottom-10 bottom-5 left-1/2 translate-x-[-50%]'>
+			<section className='flex gap-3 absolute xl:bottom-8 bottom-5 left-1/2 translate-x-[-50%]'>
 				<div
 					className={`h-[0.6rem] transition-colors duration-300 w-[0.6rem] rounded-full bg-[#00000074] cursor-pointer ${
 						myImagesTransform === 'firstSlide' ? 'bg-[#ffffffc5]' : ''
