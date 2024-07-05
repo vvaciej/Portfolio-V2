@@ -25,7 +25,7 @@ i18next.use(initReactI18next).init({
 				msc: 'months',
 				'Full course Javascript and Typescript': 'Kompletny kurs Javascript i Typescript',
 				'Full course React and Next': 'Kompletny kurs podstaw: React i Next',
-				'Full course basics NodeJS, Express': 'Kompletny kurs podstaw NodeJS, Express',
+				'Full course basics NodeJS, ExpressJS (Backend)': 'Kompletny kurs podstaw NodeJS, Express (Backend)',
 				'Second semester college computer science ': 'Student informatyki drugiego semestru ',
 				'at WSB in Poznań': 'na uczelni WSB Merito w Poznaniu',
 				'Last played': 'Ostatnio słuchane',
