@@ -46,7 +46,7 @@ export default function Home({ params }: params) {
 							<div className='w-full h-full bg-[#2C2C2E] p-3 px-6 rounded-[2rem] lg:col-span-1 md:col-span-2 col-span-2 sm:col-span-1'>
 								<section className='relative lg:bottom-1 sm:bottom-4 md:bottom-5 flex justify-center flex-col items-center'>
 									<img
-										className='lg:top-5 sm:top-8 md:top-4 xl:top-6 lg:h-max xs:h-32 h-28 md:h-36 sm:h-24 top-[-14%] xs:top-[-40%] sm:relative absolute'
+										className='lg:top-5 sm:top-8 md:top-4 xl:top-6 lg:h-max xs:h-32 h-28 max-h-[8rem] md:h-36 sm:h-24 top-[-14%] xs:top-[-40%] sm:relative absolute'
 										src='https://i.ibb.co/VpHR2Dr/fb3274a5-f14e-4488-84fe-13cd5238b192.png'
 										alt='wsb-merito-warszawa-logo'
 									/>
