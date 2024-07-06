@@ -33,13 +33,13 @@ export default function Home({ params }: params) {
 	return (
 		<>
 			{params.lang === 'pl' || params.lang === 'en' ? (
-				<div className='bg-[#1c1c1e] h-full w-full text-black'>
+				<div className='bg-[#1c1c1e] h-max w-full text-black'>
 					<div className='w-full h-full font-[system-ui] flex items-center flex-col font-semibold text-[#eee]'>
 					<Header />
 						<div className='w-full sm:h-8 h-7 xl:h-9 bg-[#63e6be] text-[#080808] flex items-center justify-center'>
 							<h2 className='sm:text-[1rem] text-sm'>{t('Im available rn')}</h2>
 						</div>
-						<main className='xl:w-[70rem] md:w-[44rem] xs:w-[22rem] xxs:w-[18rem] w-[91%] sm:w-[30rem] lg:w-[60rem] mt-10 lg:mt-16 h-full grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 sm:grid-rows-8 grid-rows-[repeat(16,minmax(0,1fr))] md:grid-rows-6 gap-5 md:mb-32 mb-20'>
+						<main className='xl:w-[70rem] md:w-[44rem] xs:w-[22rem] xxs:w-[18rem] w-[91%] sm:w-[30rem] lg:w-[60rem] mt-10 lg:mt-16 h-max grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 sm:grid-rows-8 grid-rows-[repeat(16,minmax(0,1fr))] md:grid-rows-6 gap-5 md:mb-32 mb-20'>
 							<AboutMeBlock />
 							<ImgCarousel />
 							<LearningPath />
