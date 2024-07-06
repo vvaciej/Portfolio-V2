@@ -39,14 +39,14 @@ export default function Home({ params }: params) {
 						<div className='w-full sm:h-8 h-7 xl:h-9 bg-[#63e6be] text-[#080808] flex items-center justify-center'>
 							<h2 className='sm:text-[1rem] text-sm'>{t('Im available rn')}</h2>
 						</div>
-						<main className='xl:w-[70rem] md:w-[44rem] xs:w-[22rem] xxs:w-[18rem] w-[91%] sm:w-[30rem] lg:w-[60rem] mt-10 lg:mt-16 h-max md:max-h-[85rem] max-h-[98rem] xl:max-h-[70rem] grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 sm:grid-rows-8 grid-rows-[repeat(16,minmax(0,1fr))] md:grid-rows-6 gap-5 md:mb-32 mb-20'>
+						<main className='xl:w-[70rem] md:w-[44rem] xs:w-[22rem] xxs:w-[18rem] w-[91%] sm:w-[30rem] lg:w-[60rem] mt-10 lg:mt-16 h-max md:max-h-[85rem] sm:max-h-[98rem] max-h-[110rem] xl:max-h-[70rem] grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 lg:grid-rows-4 sm:grid-rows-8 grid-rows-[repeat(16,minmax(0,1fr))] md:grid-rows-6 gap-5 md:mb-32 mb-20'>
 							<AboutMeBlock />
 							<ImgCarousel />
 							<LearningPath />
 							<div className='w-full h-full bg-[#2C2C2E] p-3 px-6 rounded-[2rem] lg:col-span-1 md:col-span-2 col-span-2 sm:col-span-1'>
 								<section className='relative lg:bottom-1 sm:bottom-4 md:bottom-5 flex justify-center flex-col items-center'>
 									<img
-										className='lg:top-5 sm:top-8 md:top-4 xl:top-6 lg:h-max xs:h-32 h-28 max-h-[8rem] md:h-36 sm:h-24 top-[-14%] xs:top-[-40%] sm:relative absolute'
+										className='lg:top-5 sm:top-8 md:top-4 xl:top-6 lg:h-max xs:h-32 h-28 max-h-[7.5rem] md:h-36 sm:h-24 top-[-14%] xs:top-[-40%] sm:relative absolute'
 										src='https://i.ibb.co/VpHR2Dr/fb3274a5-f14e-4488-84fe-13cd5238b192.png'
 										alt='wsb-merito-warszawa-logo'
 									/>
