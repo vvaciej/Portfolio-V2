@@ -4,7 +4,7 @@ export const SpotifyBlock = () => {
 	const { t } = useTranslation();
 	return (
 		<div className='w-full h-full bg-[#2C2C2E] col-span-2 sm:row-span-1 row-span-2 rounded-[2rem] xs:p-3 xs:pt-6 xxs:pt-8 xxs:pb-8 xxs:px-3 xs:pb-7 p-7 pb-4 pt-5 sm:gap-0 gap-6 flex-col flex lg:px-7 px-2'>
-			<h1 className='text-3xl font-bold text-center'>UI & UX</h1>
+			<h1 className='text-3xl font-bold text-center mb-1'>UI & UX</h1>
 			<section className='items-center gap-3 flex sm:flex-row flex-col lg:grid xl:grid-cols-[1.2fr,2fr] lg:grid-cols-[1fr,2fr]'>
 				<img
 					className='lg:w-full lg:h-full object-cover h-36 sm:block hidden'
