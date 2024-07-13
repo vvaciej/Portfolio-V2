@@ -34,7 +34,7 @@ export const MapBoxBlock = () => {
 				{...settings}
 				mapStyle='mapbox://styles/mapbox/dark-v9'
 				mapboxAccessToken={'pk.eyJ1IjoidnZhY2llaiIsImEiOiJjbHk0cHRmYnAwNHFuMmpyM2RrNThtaGtrIn0.WgdfqjM7jnpSzxpCe_Gxbw'}>
-				<Marker latitude={52.3716892} longitude={16.8983987}></Marker>
+				<Marker latitude={52.3716892} longitude={21.02187}></Marker>
 			</Map>
 		</div>
 	);
