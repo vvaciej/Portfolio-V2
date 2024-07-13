@@ -3,7 +3,7 @@ import Map from 'react-map-gl';
 import { useState } from 'react';
 
 export const MapBoxBlock = () => {
-	const [settings, setSettings] = useState({
+	const [settings,] = useState({
 		scrollZoom: true,
 		boxZoom: true,
 		dragRotate: true,
@@ -20,8 +20,8 @@ export const MapBoxBlock = () => {
 	});
 
 	const initialViewState = {
-		latitude: 52.2877,
-		longitude: 21.02187,
+		latitude: 52.265614013671875,
+		longitude: 21.02256202697754,
 		zoom: 10,
 		bearing: 0,
 		pitch: 0,
@@ -34,7 +34,7 @@ export const MapBoxBlock = () => {
 				{...settings}
 				mapStyle='mapbox://styles/mapbox/dark-v9'
 				mapboxAccessToken={'pk.eyJ1IjoidnZhY2llaiIsImEiOiJjbHk0cHRmYnAwNHFuMmpyM2RrNThtaGtrIn0.WgdfqjM7jnpSzxpCe_Gxbw'}>
-				<Marker latitude={52.3716892} longitude={21.02187}></Marker>
+				<Marker latitude={52.285614013671875} longitude={21.02256202697754}></Marker>
 			</Map>
 		</div>
 	);
