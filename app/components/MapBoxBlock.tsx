@@ -20,8 +20,8 @@ export const MapBoxBlock = () => {
 	});
 
 	const initialViewState = {
-		latitude: 52.3716892,
-		longitude: 16.8983987,
+		latitude: 52.2877,
+		longitude: 21.02187,
 		zoom: 10,
 		bearing: 0,
 		pitch: 0,

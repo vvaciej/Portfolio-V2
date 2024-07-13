@@ -52,7 +52,7 @@ export default function Home({ params }: params) {
 									/>
 									<p className='xl:text-[1.2rem] md:text-lg lg:text-[1.05rem] font-semibold text-center lg:leading-5 md:leading-6 xs:leading-5 leading-[1.2rem] md:top-[-1rem] lg:top-0 xl:leading-6 sm:mt-3 md:mt-0 relative sm:top-0 xs:top-20 top-[4.5rem]'>
 										{t('Second semester college computer science ')}
-										<b className='font-bold'>{t('at WSB in Poznań')}</b>
+										<b className='font-bold'>{t('at WSB in Warsaw')}</b>
 									</p>
 								</section>
 							</div>
